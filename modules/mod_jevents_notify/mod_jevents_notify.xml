@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" method="upgrade">	
+	<name>JEvents Notify</name>
+	<creationDate>April 2013</creationDate>
+	<author>GWE Systems Ltd</author>
+	<copyright>(C) 2011-2013 GWE Systems Ltd</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>	  
+	<authorEmail></authorEmail>
+	<authorUrl>http://www.jevents.net</authorUrl>
+	<version>3.0.1</version>
+	<description>JEV_NOTIFY_DESCRIPTION</description>
+	<files>
+		<filename module="mod_jevents_notify">mod_jevents_notify.php</filename>
+		<filename>helper.php</filename>
+		<filename>updateNotifications.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_jevents_notify.ini</language>
+	</languages>		
+	<config>
+		<fields name="params">
+			<fieldset name="basic"  >
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="limit" type="text" default="10" label="JEV_CATEGORY_LIST_SIZE" description="JEV_CATEGORY_LIST_SIZE_DESC"/>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

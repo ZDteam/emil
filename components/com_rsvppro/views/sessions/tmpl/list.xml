@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: calendar.xml 2282 2011-07-06 09:36:22Z geraintedwards $ --> 
+<metadata>
+
+	<layout title="COM_RSVPPRO_LIST_SESSIONS">
+		<help
+			key = "COM_RSVPPRO_LIST_SESSIONS_VIEW_HELP"
+		/>
+		<message>
+			<![CDATA[COM_RSVPPRO_LIST_SESSIONS_DESC]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params" >
+		<fieldset name="component" label="JEV_TAB_COMPONENT"  >
+			<field name="relative" type="radio" default='ABS'  label="COM_JEVENTS_DATE_RANGE_RELATIVE_LABEL" description="COM_JEVENTS_DATE_RANGE_RELATIVE_DESC">
+				<option value="abs">COM_JEVENTS_DATE_RANGE_RELATIVE_ABS</option>
+				<option value="rel">COM_JEVENTS_DATE_RANGE_RELATIVE_REL</option>
+				<option value="strtotime">COM_JEVENTS_DATE_RANGE_RELATIVE_STR</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

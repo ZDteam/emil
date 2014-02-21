@@ -1,0 +1,718 @@
+/*********************
+* Calendar style
+**********************/
+/* Main layout items */
+.jeventslight{
+	color:#000000;
+}
+#jev_title {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+	text-align:center;
+	margin-bottom:0.5em;
+}
+.jev_toprow {
+	border-color:#999999;
+	border-style: solid;
+	border-width:1px 1px 0px 1px;
+	height:23px;
+}
+table.jev_row {
+	border-collapse:separate;
+	margin:0px;
+}
+table.jev_row td {
+	padding:0px!important;
+}
+.jev_topleft {
+   	background:url(../images/MainTopLeft.jpg) no-repeat transparent top left !important;
+	border-color:#999999;
+	border-style: solid;
+	border-width:0px;
+    height:23px;
+	width:23px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.jev_daysnames {
+    height:23px;
+    line-height:23px;
+    color:#eeeeee;
+   	background:url(../images/MainTopRow.jpg) repeat-x transparent top left !important;
+    font-weight:bold;
+    text-align:center;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.jev_daysnames span {
+	display:block;
+	border-color:#999999;
+	border-style: solid;
+	border-width:0px 0px 0px 1px;
+}
+.jev_monthrow{
+}
+.jev_clear{
+	clear:both;
+}
+
+#jevents_body , #jevents_body tr, #jevents_body td, #jevents_header , #jevents_header tr, #jevents_header td{
+	border:none;
+	line-height:1.5em;
+}
+#jevents_body a:hover {
+	color: #8090A3;
+	background-color: transparent;
+}
+td.jev_weeknum{
+   	background:url(../images/MainLeftCol.jpg) repeat-y transparent top left!important;
+	border-style:solid!important;
+	border-color:#999999!important;
+	border-width:1px 1px 0px 1px!important;
+	width:23px;
+	text-align:center;
+	padding:0px!important;
+	vertical-align:top;
+}
+td.jev_weeknum a {
+    font-size:10px;
+    font-weight: bold;
+    font-family: Verdana;
+    text-decoration: none;
+    color:#ffffff!important;
+    margin-top:5px;
+    padding:0px;
+}
+
+img.jevspacer {
+	width:1px;
+	height:81px;
+    display:inline;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+td.jevdaydata {
+	vertical-align:top;
+	padding:0px!important;
+}
+div.jevdaydata {
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+div.jev_daynum {
+	float:left !important;
+	height:20px !important;
+	padding-left:2px !important;
+} 
+div.jev_daynum span {
+	display:block;
+	border-style:solid;
+	border-color:#999999;
+	border-width:1px 1px 0px 0px !important; 	
+	height:20px;
+	font-size:100%;
+}
+
+div.jeveventrow, div.jeveventrow div {
+	float:left;
+}
+
+div.jev_daynum_noevents {
+	background-color:#eeeeee;
+}
+div.jev_daynum_today {
+	background-color:#dddddd;
+}
+
+a.addjevent img {
+border-width:0px!important;
+}
+div.showjevadd a.addjevent {
+   	visibility:visible;
+}
+
+
+
+table.jev_eventsrow td.jevdaydata {
+	border-width:0px;
+}
+div.eventfull {
+	background-color:#f8f8f8;
+	margin:2px;
+	overflow:hidden;
+}
+div.eventfull div {
+	border-width:1px 1px 1px 5px;
+	border-top-color:#cccccc;
+	border-right-color:#cccccc;
+	padding:2px;
+}
+a.cal_daylink:link , a.cal_daylink:visited, a.cal_daylink:hover{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cal_td_today a.cal_daylink:link, .cal_td_today a.cal_daylink:visited, .cal_td_today a.cal_daylink:hover {
+    color: #000000;
+}
+a.cal_titlelink:link, a.cal_titlelink:visited, a.cal_titlelink:hover {
+    font-size:10px;
+    font-weight: bold;
+    font-family: Verdana;
+    text-decoration: none;
+    color:inherit;
+    display:block;
+    margin-bottom:1px;
+}
+
+div.eventstyle {
+	padding:0px;
+	border-style:solid;	
+}
+
+/* List layouts */
+
+#jevents_body table.ev_table td.cal_td_daysnames {
+	border-color:#999999;
+	border-style: solid;
+	border-width:0px 0px 1px 0px;
+    height:23px;
+    line-height:23px;
+    color:#eeeeee;
+   	background:url(../images/MainTopRow.jpg) repeat-x transparent top left!important;
+    font-weight:bold;
+    text-align:center;
+    width:100%;
+	margin:0px;
+	padding:0px;
+}
+#jevents_body table.ev_table {
+	border-width:1px 1px 0px 1px;
+	border-color:#999999;
+	border-style: solid;
+	margin:4px 0px 0px 0px;
+}
+#jevents_body table.ev_table td.ev_td_left {
+	border-color:#999999;
+	border-style: solid;
+	border-width:0px 1px 1px 0px;
+    text-align:center;	
+}
+#jevents_body table.ev_table td.ev_td_today {
+	border-color:#999999;
+	border-style: solid;
+	border-width:0px 1px 1px 0px;
+    text-align:center;
+}
+#jevents_body table.ev_table td.ev_td_right {
+	border-color:#999999;
+	border-style: solid;
+	border-width:0px 0px 1px 0px;
+}
+
+#jevents_body table.ev_table td.ev_td_right ul,#jevents_body  table.ev_table td.ev_td_right li{
+	list-style-image : none;
+	list-style-type : none;
+	background-image:none;
+	padding-left:10px;
+}
+#jevents_body table.ev_table td.ev_td_right li{
+	border-width:0px 0px 0px 5px!important;
+	border-style:solid;
+	margin-bottom:2px;
+}
+/****************************
+* Iconic calendar navigation
+****************************/
+
+#jevents_body td.iconic_td {
+   width:68px!important;
+   margin:0px;
+   padding:0px;
+}
+div.nav_bar_cal{
+   margin:0px;
+   padding:0px;
+   width:63px;
+}
+div.nav_bar_cal img, div.nav_bar_cal a{
+   height:45px;
+   width:58px;
+   border:none!important;
+}
+tr.icon_labels{
+ font-size:8pt;
+ margin:0px;
+ padding:0px;
+}
+div.ev_icon_yearly {
+     background-image: url("../images/SeeByYear.jpg")!important;
+     background-repeat: no-repeat!important;
+}
+div.ev_icon_monthly {
+     background-image: url("../images/SeeByMonth.jpg")!important;
+     background-repeat: no-repeat!important;
+}
+div.ev_icon_weekly{
+     background-image: url("../images/SeeByWeek.jpg")!important;
+     background-repeat: no-repeat!important;
+}
+div.ev_icon_daily{
+     background-image: url("../images/SeeByDay.jpg")!important;
+     background-repeat: no-repeat!important;
+}
+div.ev_icon_search{
+     background-image: url("../images/Search.jpg")!important;
+     background-repeat: no-repeat!important;
+}
+div.ev_icon_jumpto{
+     background-image: url("../images/JumpTo.jpg")!important;
+     background-repeat: no-repeat!important;
+}
+
+
+/* Event Legend Module Styling */
+.moduletable div.event_legend_container {
+	border:0px;
+	color:black;
+	padding:0px;
+	font-size:0.9em;
+}
+ul.event_legend_list{
+	list-style:none !important;
+	padding:0px;
+	margin:5px;
+}
+ul.event_legend_list li {
+	list-style:none !important;
+	border:solid black 1px;
+	background-image:none !important;
+	padding-left:0px;
+}
+div.event_legend_name {
+	font-size:1em;
+	padding:3px;
+	font-weight:bold;
+}
+div.event_legend_name a{
+	display:block;
+	text-decoration:none;
+   	background-color:inherit;
+   	color:black;
+}
+	
+div.event_legend_desc {
+	background-color:white;
+	color:black;
+	padding:3px 3px 3px 10px;
+	
+}
+
+/* Component Legend Styling
+   float div to get table like view 
+   border-color is set to category color by code */
+#jevents_body .event_legend_container {
+	background-color:rgb(230,230,230);
+	border-top:solid #999 1px;
+}
+#jevents_body  div.event_legend_item {
+	float:left;
+	border-left-width:0px;
+	border-left-style:solid;
+	padding-left:4px;
+	margin-top:5px;
+	margin-left:0px;
+	margin-bottom:4px;
+	min-width:80px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#jevents_body div.event_legend_name {
+	border-left-width:8px;
+	border-left-style:solid;
+	padding: 0px 0px 0px 4px;
+}
+#jevents_body div.event_legend_desc {
+	border-left-width:8px;
+	border-left-style:solid;
+	padding: 0px 0px 0px 4px;
+	display:none;
+}
+/* end component legend */
+
+div.jev_adminfilter {
+	text-align:center;
+	font-weight:bold;
+	margin:5px auto 10px auto; 
+}
+
+#jevents_body a.addjevent:hover {background-color: transparent;}
+a.addjevent {
+	width:16px;
+	height:16px;
+	margin-right:2px;
+	float:right;
+    background-image: url("../images/add.png")!important;
+   	background-repeat: no-repeat; 
+   	background-position: top left;
+   	visibility:hidden;
+}
+a.addjevent img {
+border-width:0px!important;
+}
+td.showjevadd a.addjevent {
+   	visibility:visible;
+}
+
+/* Calendar navigaton area */
+div.ev_navigation a:hover{
+	background:transparent!important;
+}
+
+div.ev_navigation table{
+	margin: 0px auto;
+}
+div.ev_navigation table tr, div.ev_navigation table td{
+	border:none;
+}
+/* Tidy up common templates */
+#jevents_body fieldset {
+	background-image:none;
+}
+div.jev_pagination {
+	width:100%;
+	text-align:center;
+}
+
+div.jev_dayoutofmonth {
+	background-color:#e4e8e8;
+	border-width: 0px 0px 0px 0px;
+	border-style:solid;
+	border-color: #999;
+}
+div.jev_daynum_outofmonth {
+	background-color:#e4e8e8;
+}
+
+div.jev_daynum_outofmonth span {
+	color:#ccc;
+}
+
+/***************************************
+* Mootools ToolTips for JEvents Calendar
+****************************************/
+.jevtip-tip, .jevtip {
+   float: left;
+   background: #f5f5f5;
+   border: 1px solid #D4D5AA;
+   padding: 0px;
+   max-width: 400px;
+   z-index:99;
+   font-size:10pt;
+}
+
+.jevtip-text {
+   padding: 0;
+   margin: 0;
+   font-size: 0.8em;
+}
+ 
+div.jevtt_title{
+   font-weight: bold;
+   font-size: 1.2em;
+	padding:2px;
+	width:196px;
+}
+div.jevtt_text{
+	padding:2px;
+	width:196px;
+	line-height: 1.3em;
+}
+
+/** Colour schemes **/
+/** RED **/
+.jev_topleft_red {
+   	background:url(../images/MainTopLeft.jpg) no-repeat transparent top left!important;
+}
+#jevents_body .jev_daysnames_red , #jevents_body table.ev_table td.cal_td_daysnames_red {
+   	background:url(../images/MainTopRow.jpg) repeat-x transparent top left!important;
+}
+td.jev_weeknum_red {  	
+	background:url(../images/MainLeftCol.jpg) repeat-y transparent top left!important;
+}
+/** BLUE **/
+.jev_topleft_blue {
+   	background:url(../images/MainTopLeftBlue.jpg) no-repeat transparent top left!important;
+}
+#jevents_body .jev_daysnames_blue , #jevents_body table.ev_table td.cal_td_daysnames_blue {
+   	background:url(../images/MainTopRowBlue.jpg) repeat-x transparent top left!important;
+}
+td.jev_weeknum_blue {  	
+	background:url(../images/MainLeftColBlue.jpg) repeat-y transparent top left!important;
+}
+div.ev_icon_yearly_blue {
+}
+div.ev_icon_monthly_blue {
+     background-image: url("../images/SeeByMonthBlue.jpg")!important;
+}
+div.ev_icon_weekly_blue{
+     background-image: url("../images/SeeByWeekBlue.jpg")!important;
+}
+div.ev_icon_daily_blue{
+     background-image: url("../images/SeeByDayBlue.jpg")!important;
+}
+div.ev_icon_search_blue{
+     background-image: url("../images/SearchBlue.jpg")!important;
+}
+div.ev_icon_jumpto_blue{
+}
+
+/** GREEN **/
+.jev_topleft_green {
+   	background:url(../images/MainTopLeftGreen.jpg) no-repeat transparent top left!important;
+}
+#jevents_body .jev_daysnames_green , #jevents_body table.ev_table td.cal_td_daysnames_green {
+   	background:url(../images/MainTopRowGreen.jpg) repeat-x transparent top left!important;
+}
+td.jev_weeknum_green {  	
+	background:url(../images/MainLeftColGreen.jpg) repeat-y transparent top left!important;
+}
+div.ev_icon_yearly_green {
+}
+div.ev_icon_monthly_green {
+     background-image: url("../images/SeeByMonthGreen.jpg")!important;
+}
+div.ev_icon_weekly_green{
+     background-image: url("../images/SeeByWeekGreen.jpg")!important;
+}
+div.ev_icon_daily_green{
+     background-image: url("../images/SeeByDayGreen.jpg")!important;
+}
+div.ev_icon_search_green{
+     background-image: url("../images/SearchGreen.jpg")!important;
+}
+div.ev_icon_jumpto_green{
+}
+
+/** PURPLE **/
+.jev_topleft_purple {
+   	background:url(../images/MainTopLeftPurple.jpg) no-repeat transparent top left!important;
+}
+#jevents_body .jev_daysnames_purple , #jevents_body table.ev_table td.cal_td_daysnames_purple {
+   	background:url(../images/MainTopRowPurple.jpg) repeat-x transparent top left!important;
+}
+td.jev_weeknum_purple {  	
+	background:url("../images/MainLeftColPurple.jpg") repeat-y transparent top left!important;
+}
+div.ev_icon_yearly_purple {
+}
+div.ev_icon_monthly_purple {
+     background-image: url("../images/SeeByMonthPurple.jpg")!important;
+}
+div.ev_icon_weekly_purple{
+     background-image: url("../images/SeeByWeekPurple.jpg")!important;
+}
+div.ev_icon_daily_purple{
+     background-image: url("../images/SeeByDayPurple.jpg")!important;
+}
+div.ev_icon_search_purple{
+     background-image: url("../images/SearchPurple.jpg")!important;
+}
+div.ev_icon_jumpto_purple{
+}
+
+/* RTL changes */
+table.jevrtl .jev_topleft, 
+table.jevrtl .jev_daysnames, 
+table.jevrtl .jev_daynum,
+table.jevrtl div.jeveventrow,
+table.jevrtl div.jeveventrow div
+ {
+	float:right;
+}
+table.jevrtl div.jev_daynum {
+	padding:0px 2px 0px 0px;
+}
+table.jevrtl div.jev_daynum span {
+	border-width:1px 0px 0px 1px; 	
+}
+table.jevrtl a.addjevent {
+	float:left;
+}
+table.jevrtl .jev_daysnames {
+	border-width:0px 1px 0px 0px;
+}
+table.jevrtl .jev_daynum,
+table.jevrtl .jev_toprow,
+table.jevrtl .jev_weeknum
+ {
+	border-width:1px 0px 0px 1px;
+}
+table.jevrtl div.eventfull div {
+	border-width:1px 5px 1px 1px;
+}
+
+/* Joomla 1.6 changes */
+#action_dialog {
+	text-align: left;
+}
+#action_dialog a{
+	display:block;
+	margin:0px 2px;
+}
+#jevents_header {position:relative;}
+#jevents_header ul.actions {
+	list-style-image: none;
+	position:absolute;
+	right:0px;
+	top:0px;
+	list-style-type: none;
+	list-style-image: none;
+	width:auto!important;	
+}
+#jevents_header ul.actions li {
+	line-height:14px!important;	
+	background-image:none!important;
+	padding-left:0px!important;
+	overflow:visible!important;
+	float:left;
+	margin-left:3px;
+}
+
+/* Print version */
+@media print {
+   table.contentpaneopen {
+   		background-image:none!important;
+       background-color:white!important;
+   }
+	div.ev_navigation {
+		display:none;
+	}
+	div.ev_adminpanel {
+		display:none;
+	}
+	.ev_noprint {
+		display:none;
+	}
+}
+
+
+/* ICAL Export style */
+p.ical_form_button a {
+	border: 1px solid rgb(202, 202, 202);
+	padding: 10px;
+	border-radius: 4px;
+	background-color: rgb(247, 247, 247);
+	color: rgb(107, 121, 107);
+	line-height:2.6;
+}
+p.ical_form_button a:hover {
+
+}
+.ical_submit {
+	padding:5px;
+}
+
+.jev_google_export {
+ float:left;
+ width:100%;   
+}
+.jev_google_export img{
+    display:block;
+    margin-top:5px;
+}
+.jev_google_export_pub, .jev_google_export_priv {
+	float:left;
+	margin:5px;
+}
+/* ICAL Export style */
+div.ical_form_button.export_public a{
+	float:left;
+	margin-bottom:5px;
+	margin-right: 2%;
+	width:45%;
+	clear:both;
+}
+div.ical_form_button.export_private a {
+	float:right;
+	margin-bottom:5px;
+	margin-left:2%;
+	width:45%;
+	text-align:right;
+}
+div.ical_form_button a{
+	border: 1px solid rgb(202, 202, 202);
+	padding: 6px;
+	border-radius: 4px;
+	background-color: rgb(247, 247, 247);
+	color: rgb(107, 121, 107);
+	line-height:2.6;
+}
+div.ical_form_button a:hover {
+
+}
+.ical_submit {
+	padding:5px;
+}
+
+.jev_google_export {
+	float:left;
+	width:100%;   
+}
+.jev_google_export img{
+    display:block;
+    margin-top:5px;
+}
+.jev_google_export_pub {
+	float:left;
+	margin:5px;
+}
+.jev_google_export_priv {
+	float:right;
+	margin:5px;
+}
+h3.export_pub {
+	float:left;
+	width:50%;
+	text-align:left;
+}
+h3.export_priv {
+	float:right;
+	width:50%;
+	text-align:right;
+}
+.ical_form_button.export_public h3 {
+	text-align:center;
+}
+h2.ical_generated {
+	text-align:center;
+}
+input.ical_submit {
+	margin:10px 0 10px 0;
+	display:block;
+}
+.icalformat label {
+	display:inline-block;
+}
+div.export_form {
+	background-color:#cfcfcf;
+	display:inline-block;  
+	width:97%;
+	border-radius:5px; 
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	padding:10px;
+}

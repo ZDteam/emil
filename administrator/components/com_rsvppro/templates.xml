@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields >
+		<fieldset  name="RSVP_Currency_Formatting">
+			<field name="Currency" type="list" default="USD" menu="hide"   label="RSVP_CURRENCY_DEFAULT"  labelclass="control-label"  description="" >
+				<option value='AUD'>RSVP_CURRENCY_AUSTRALIAN</option>
+				<option value='CAD'>RSVP_CURRENCY_CANADIAN</option>
+				<option value='EUR'>RSVP_CURRENCY_EUROPEAN</option>
+				<option value='GBP'>RSVP_CURRENCY_ENGLISH</option>
+				<option value='JPY'>RSVP_CURRENCY_JAPANESE</option>
+				<option value='USD'>RSVP_CURRENCY_AMERICAN</option>
+				<option value='NZD'>RSVP_CURRENCY_NEWZEALAND</option>
+				<option value='CHF'>RSVP_CURRENCY_SWISS</option>
+				<option value='HKD'>RSVP_CURRENCY_HONGKONG</option>
+				<option value='SGD'>RSVP_CURRENCY_SINGAPORE</option>
+				<option value='SEK'>RSVP_CURRENCY_SWEDISH</option>
+				<option value='DKK'>RSVP_CURRENCY_DANISH</option>
+				<option value='PLN'>RSVP_CURRENCY_POLISH</option>
+				<option value='NOK'>RSVP_CURRENCY_NORWEGIAN</option>
+				<option value='HUF'>RSVP_CURRENCY_HUNGARIAN</option>
+				<option value='CZK'>RSVP_CURRENCY_CZECH</option>
+				<option value='ZAR'>RSVP_CURRENCY_SOUTHAFRICA</option>
+				<option value='BRL'>RSVP_CURRENCY_BRAZIL</option>
+				<option value='TRY'>RSVP_CURRENCY_TURKEY</option>
+				<option value='RMB'>RSVP_CURRENCY_CHINA</option>
+				<option value='MXN'>RSVP_CURRENCY_MEXICO</option>
+				<option value='UPT'>RSVP_CURRENCY_POINTS</option>
+			</field>				
+			<field name="CurrencySymbol" type="text" default="$" menu="hide"   labelclass="control-label"  label="RSVP_CURRENCY_SYMBOL" description=""  />
+			<field name="CurrencyPlacement" type="list" default="left" menu="hide"   labelclass="control-label"  label="RSVP_CURRENCY_PLACEMENT" description="" >
+				<option value='left'>RSVP_LEFT</option>
+				<option value='right'>RSVP_RIGHT</option>
+			</field>
+			<field name="CurrencyDecimal" type="text" default="." menu="hide"   labelclass="control-label"  label="RSVP_CURRENCY_DECIMAL" description=""  />
+			<field name="CurrencyDigits" type="text" default="2" menu="hide"   labelclass="control-label"  label="RSVP_CURRENCY_DIGITS" description=""  />
+			<field name="CurrencySeparator" type="text" default="," menu="hide"   labelclass="control-label"  label="RSVP_CURRENCY_SEPARATOR" description=""  />
+
+		</fieldset>	
+		<fieldset  name="RSVP_Paid_Event_Options">
+			<field name="unpaidcapacity" type="jevboolean" default="0"   labelclass="control-label"  label='JEV_UNPAID_CAPACITY_LABEL'  description='JEV_UNPAID_CAPACITY_DESC'  />
+			<field name="waitingnopay" type="jevboolean" default="0"   labelclass="control-label"  label='JEV_WAITING_ATTENDEES_DONTPAY'  description='JEV_WAITING_ATTENDEES_DONTPAY_DESC'  />
+		</fieldset>		
+		<fieldset  name="Payment Gateways"  addfieldpath="/administrator/components/com_jevents/fields/">
+		</fieldset>
+	<!--
+	<fieldset  name="RSVP_SESSION_OPTIONS">
+		<field name="blockoverlaps" type="jevboolean" default="0"   labelclass="control-label"  label='JEV_BLOCK_OVERLAPPING_REGISTRATIONS'  description='JEV_BLOCK_OVERLAPPING_REGISTRATIONS_DESC'  />
+	</fieldset>		
+	//-->
+		<fieldset  name="RSVP_ATTENDANCE_MESSAGES" addfieldpath="/administrator/components/com_rsvppro/fields" >
+				
+			<field name="acksubject" type="jevtextarea" default='JEV_DEFAULT_ACKNOWLEDGE_SUBJECT'  rows="1" cols="80"   label='JEV_ACKNOWLEDGE_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+			<field name="ackmessage" type="jevhtml" default='JEV_DEFAULT_ACKNOWLEDGE_MESSAGE'  rows="6" cols="80"   label='JEV_ACKNOWLEDGE_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+
+			<field name="notifysubject" type="jevtextarea" default='JEV_DEFAULT_NOTIFY_SUBJECT'  rows="1" cols="80"    label='JEV_DEFAULT_NOTIFY_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+			<field name="notifymessage" type="jevhtml" default='JEV_DEFAULT_NOTIFY_MESSAGE'  rows="6" cols="80"    label='JEV_DEFAULT_NOTIFY_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+
+			<field name="cancelsubject" type="jevtextarea" default='JEV_DEFAULT_CANCEL_SUBJECT'  rows="1" cols="80"    label='JEV_CANCEL_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+			<field name="cancelmessage" type="jevhtml" default='JEV_DEFAULT_CANCEL_MESSAGE'  rows="6" cols="80"    label='JEV_CANCEL_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+
+			<field name="admincancelsubject" type="jevtextarea" default='JEV_DEFAULT_ADMINCANCEL_SUBJECT'  rows="1" cols="80"    label='JEV_ADMINCANCEL_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+			<field name="admincancelmessage" type="jevhtml" default='JEV_DEFAULT_ADMINCANCEL_MESSAGE'  rows="6" cols="80"    label='JEV_ADMINCANCEL_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		
+			<field name="approvedsubject" type="jevtextarea" default='JEV_DEFAULT_APPROVED_SUBJECT'  rows="1" cols="80"    label='JEV_APPROVED_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+			<field name="approvedmessage" type="jevhtml" default='JEV_DEFAULT_APPROVED_MESSAGE'  rows="6" cols="80"    label='JEV_APPROVED_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />		
+
+			<field name="usercancelsubject" type="jevtextarea" default='JEV_DEFAULT_USERCANCEL_SUBJECT'  rows="1" cols="80"    label='JEV_USERCANCEL_SUBJECT_LABEL'  description='JEV_USERCANCEL_SUBJECT_DESC'  />
+			<field name="usercancelmessage" type="jevhtml" default='JEV_DEFAULT_USERCANCEL_MESSAGE'  rows="6" cols="80"    label='JEV_USERCANCEL_MESSAGE_LABEL'  description='JEV_USERCANCEL_MESSAGE_DESC'  />		
+		
+			<field name="notifybcc" type="text" default=""    label='JEV_NOTIFY_BCC'  description='JEV_NOTIFY_BCC_DESC'  size="80"  />				
+		<!--
+		<field name="manpaysubject" type="jevtextarea" default='JEV_MANUAL_PAYMENT_CONFIRMATION_SUBJECT'  rows="1" cols="80"    label='JEV_MANUAL_PAYMENT_CONFIRMATION_SUBJECT_LABEL'  description='JEV_MANUAL_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+		<field name="manpaymessage" type="jevhtml" default='JEV_MANUAL_PAYMENT_CONFIRMATION_MESSAGE'  rows="6" cols="80"    label='JEV_MANUAL_PAYMENT_CONFIRMATION_MESSAGE_LABEL'  description='JEV_MANUAL_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+		//-->
+		</fieldset>	
+	
+	</fields>
+</form>

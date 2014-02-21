@@ -1,0 +1,103 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Widgetkit Gallery: Avenue Style
+ */
+
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+
+.wk-gallery-avenue .nav {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: center;
+	z-index: 5;
+}
+
+.wk-gallery-avenue .prev + .nav { left: 54px; }
+
+.wk-gallery-avenue .nav li {
+	display: inline-block;
+	margin-left: 3px;
+}
+.wk-gallery-avenue .nav li:first-child { margin-left: 0; }
+
+.wk-gallery-avenue .nav span {
+	width: 20px;
+	height: 20px;
+	background: url(images/nav_icons.svg) 0 0 no-repeat;
+	overflow: hidden;
+}
+.wk-gallery-avenue .nav span:hover { background-position: 0 -20px; }
+.wk-gallery-avenue .nav span:active { background-position: 0 -40px; }
+.wk-gallery-avenue .nav .active span { background-position: 0 -60px; }
+
+
+/* Buttons
+----------------------------------------------------------------------------------------------------*/
+
+.wk-gallery-avenue > div { position: relative; }
+
+.wk-gallery-avenue > div:hover .next,
+.wk-gallery-avenue > div:hover .prev {
+	top: 50%;
+	width: 50px;
+	height: 52px;
+	margin-top: -50px;
+	background: url(images/buttons.svg) 0 0 no-repeat;
+}
+.wk-gallery-avenue > div:hover .prev {
+	left: 30px;
+	background-position: 0 0;
+}
+.wk-gallery-avenue > div:hover .prev:hover { background-position: 0 -60px; }
+.wk-gallery-avenue > div:hover .prev:active { background-position: 0 -120px; }
+.wk-gallery-avenue > div:hover .next {
+	right: 30px;
+	background-position: 0 -180px;
+}
+.wk-gallery-avenue > div:hover .next:hover { background-position: 0 -240px; }
+.wk-gallery-avenue > div:hover .next:active { background-position: 0 -300px; }
+
+/* Only phones */
+@media (max-width: 480px) {
+
+	.wk-gallery-avenue > div .prev,
+	.wk-gallery-avenue > div .next { display: none !important; }
+
+}
+
+
+/* Caption
+----------------------------------------------------------------------------------------------------*/
+
+.wk-gallery-avenue .caption {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	left: 0;
+	padding: 15px 20px;
+	background: rgba(48,48,48,0.9);
+	color: #fff;
+	z-index: 5;
+}
+
+.wk-gallery-avenue .caption h1 { color: #fff; }
+
+.wk-gallery-avenue .caption a { text-decoration: none; }
+
+/* Only tablets & phones */
+@media (max-width: 768px) {
+
+	.wk-gallery-avenue .caption h1 { font-size: 28px; }
+
+}
+
+/* Only phones */
+@media (max-width: 480px) {
+
+	.wk-gallery-avenue .caption { display: none !important; }
+
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id$ --> 
+<metadata>
+
+	<layout title="COM_JEVPEOPLE_LIST_PEOPLE_TITLE">
+		<message>
+			<![CDATA[COM_JEVPEOPLE_LIST_PEOPLE_DESC]]>
+		</message>
+	</layout>
+	
+	<state>
+		<name>JEvents People Public LIST</name>
+		<params  addpath="/administrator/components/com_jevpeople/elements/">
+			<param name="@spacer" type="jevinfo" default='JEV_PEOPLE_PUBLIC_LIST'    label="" description="" />	
+
+			<param name='checkevents' type='list' default="1" label='JEV_PEOPLE_CHECK_FOR_EVENTS_BEFORE_OFFERING_LINK'  description='JEV_PEOPLE_WILL_CHECK_FOR_AVAILABLE_EVENTS_BASED_ON_DAYS_BEFORE_AND_AFTER_BELOW'  >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+			</param>
+			<param name="checkeventbefore" type="text" size="3" default="30" label='JEV_PEOPLE_DAYS_BEFORE_TODAY_TO_CHECK_FOR_EVENTS'  description="" />
+			<param name="checkeventafter" type="text" size="3" default="30" label='JEV_PEOPLE_DAYS_AFTER_TODAY_TO_CHECK_FOR_EVENTS'  description="" />
+			
+			<param name="targetmenu" type="jevmenu" default="" label='JEV_PEOPLE_TARGET_MENU_ITEM'  description='JEV_PEOPLE_MENU_ITEM_FOR_TARGET_PAGE'  />
+
+			<param name="type" type="jevptype" default="" label='RESTRICT_TO_TYPE'  description="" />
+			<param name="jevpcat" type="jevpcategory" default="" label='RESTRICT_TO_CATEGORY'  description="" />
+			<param name="showmap" type="list" default="0" label="JEV_SHOW_MULTIMAP" description="JEV_SHOW_MULTIMAP_DESC" >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+			</param>
+
+			<param name="jevview" type="list" default="month.calendar" label='JEV_PEOPLE_JEVENTS_VIEW'  description="If linking to events - which view?  Only used if target menu item is not set or is not a JEvents menu item">
+				<option value="month.calendar">JEV_PEOPLE_MONTH</option>
+				<option value="range.listevent">JEV_PEOPLE_RANGE</option>
+				<option value="year.listevents">JEV_PEOPLE_YEAR</option>
+				<option value="week.listevents">JEV_PEOPLE_WEEK</option>
+				<option value="day.listevents">JEV_PEOPLE_DAY</option>
+			</param>
+			<param name="ordering" type="list" default='alpha'  label='JEV_PEOPLE_ORDERING'  description='JEV_PEOPLE_ORDERING_DESC' >
+				<option value="alpha">JEV_ALPHABETICAL</option>
+				<option value="ordered">JEV_ORDERING</option>
+			</param>
+		</params>
+	</state>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params" >
+
+		<fieldset name="basic"  addfieldpath="/administrator/components/com_jevpeople/fields/">
+
+			<field name="@spacer" type="jevinfo" default='JEV_PEOPLE_PUBLIC_LIST'    label="" description="" />	
+
+			<field name='checkevents' type='list' default="1" label='JEV_PEOPLE_CHECK_FOR_EVENTS_BEFORE_OFFERING_LINK'  description='JEV_PEOPLE_WILL_CHECK_FOR_AVAILABLE_EVENTS_BASED_ON_DAYS_BEFORE_AND_AFTER_BELOW'  >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+			</field>
+			<field name="checkeventbefore" type="text" size="3" default="30" label='JEV_PEOPLE_DAYS_BEFORE_TODAY_TO_CHECK_FOR_EVENTS'  description="" />
+			<field name="checkeventafter" type="text" size="3" default="30" label='JEV_PEOPLE_DAYS_AFTER_TODAY_TO_CHECK_FOR_EVENTS'  description="" />
+			
+			<field name="targetmenu" type="jevmenu" default="" label='JEV_PEOPLE_TARGET_MENU_ITEM'  description='JEV_PEOPLE_MENU_ITEM_FOR_TARGET_PAGE'  />
+
+			<field name="type" type="jevptype" default="" label='RESTRICT_TO_TYPE'  multiple="multiple" size="6"  description="" />
+			<field name="jevpcat" type="category" multiple="multiple" size="6" default="" extension="com_jevpeople" label='RESTRICT_TO_CATEGORY'  description="" />
+			<field name="showmap" type="list" default="0" label="JEV_SHOW_MULTIMAP" description="JEV_SHOW_MULTIMAP_DESC" >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+			</field>
+
+			<field name="jevview" type="list" default="month.calendar" label='JEV_PEOPLE_JEVENTS_VIEW'  description="If linking to events - which view?  Only used if target menu item is not set or is not a JEvents menu item">
+				<option value="month.calendar">JEV_PEOPLE_MONTH</option>
+				<option value="range.listevent">JEV_PEOPLE_RANGE</option>
+				<option value="year.listevents">JEV_PEOPLE_YEAR</option>
+				<option value="week.listevents">JEV_PEOPLE_WEEK</option>
+				<option value="day.listevents">JEV_PEOPLE_DAY</option>
+			</field>
+			<field name="ordering" type="list" default='alpha'  label='JEV_PEOPLE_ORDERING'  description='JEV_PEOPLE_ORDERING_DESC' >
+				<option value="alpha">JEV_ALPHABETICAL</option>
+				<option value="ordered">JEV_ORDERING</option>
+			</field>
+			
+		</fieldset>
+	</fields>
+</metadata>

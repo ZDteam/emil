@@ -1,0 +1,125 @@
+/*********************
+* Calendar module style
+**********************/
+	table.jevcalendar {
+		border-style:solid;
+		border-width:0px 1px 0px 0px;
+		border-color:#999999;
+		background-color:transparent;
+		width:155px ;
+		font-family:arial;
+		font-size:12px;
+		color:#ffffff;
+		margin:0px 0px 0px 1px;
+	}
+	table.jevcalendar2{
+		border-width:0px 1px 1px 0px;
+	}
+	table.jevcalendar tr {
+		height:18px;
+	}
+	table.jevcalendar td {
+		border-style:solid;
+		border-width:1px 0px 0px 1px;
+		border-color:#999999;
+		text-align:center;
+	}
+	tr.jevtopnav {
+		background:url(../images/TopBackground.jpg) no-repeat transparent;
+		height:21px;
+		border:none;
+	}
+	table.jevcalendar a, table.jevcalendar a:visited, table.jevcalendar a:hover
+	{
+		color:#ffffff;
+		text-decoration:none;
+		background-color: transparent;
+	}
+	tr.jevtopnav  a, tr.jevtopnav a:visited, tr.jevtopnav a:hover {
+		color:#ffffff;
+		text-decoration:none;
+		font-weight:bold;
+		background-color: transparent;
+	}
+	table.jevcalendar td.jevnoevents  a, table.jevcalendar  td.jevnoevents  a:visited, table.jevcalendar  td.jevnoevents  a:hover {
+		color:#333333;
+		background-color: transparent;
+	}
+	table.jevcalendar td.jevhasevents  a, table.jevcalendar  td.jevhasevents  a:visited, table.jevcalendar  td.jevhasevents  a:hover {
+		color:#333333;
+		background-color: transparent;
+	}
+	 
+	tr.jevnav {
+	}
+	td.jevdoubleleft {
+		border-style:solid;
+		border-width:1px 0px 0px 1px;
+		border-color:#999999;
+	}
+	tr.jevtopnav td.jevleft,tr.jevtopnav td.jevmy, tr.jevtopnav td.jevright,tr.jevtopnav td.jevdoubleright {
+		border-style:solid;
+		border-width:1px 0px 0px 0px;
+		border-color:#999999;
+		vertical-align:middle;
+	}
+	tr.jevtopnav img {
+		margin:auto auto;
+	}
+	tr.jevtopnav div {
+		font-weight:bold;
+		text-align:center;
+	}
+	td.jevdayname {
+		width:25px;
+		font-weight:bold;
+	}
+	
+	td.jevnoevents {
+		background:url(../images/NoEvents.jpg) no-repeat transparent;
+		color:#333333;
+		height:20px;
+	}
+	td.jevoutofmonth {
+		background:url(../images/OutofMonth.jpg) no-repeat transparent;
+		height:20px;
+	}
+	td.jevhasevents {
+		background:url(../images/WithEvents.jpg) no-repeat transparent;
+		color:#cc012e;
+		height:20px;
+	}
+	td.jevtoday {
+		background:url(../images/TopBackground.jpg) no-repeat transparent;
+		height:20px;
+	}
+
+	
+td.mod_events_latest_first, td.mod_events_latest 
+{
+	background-color:#ffffff;
+	border-style:solid;
+	border-width:0px 0px 1px 8px;
+	padding:0px 0px 2px 2px;
+}	
+
+table.mod_events_latest_table{
+	margin:0px;
+}
+
+/** RED **/
+tr.jevtopnav.jev_red , 	td.jevtoday.jev_red {
+	background:url(../images/TopBackground.jpg) no-repeat transparent;
+}
+/** BLUE **/
+tr.jevtopnav.jev_blue , 	td.jevtoday.jev_blue {
+	background:url(../images/TopBackgroundBlue.jpg) no-repeat transparent;
+}
+/** PURPLE **/
+tr.jevtopnav.jev_purple, 	td.jevtoday.jev_purple {
+	background:url(../images/TopBackgroundPurple.jpg) no-repeat transparent;
+}
+/** BLUE **/
+tr.jevtopnav.jev_green , 	td.jevtoday.jev_green {
+	background:url(../images/TopBackgroundGreen.jpg) no-repeat transparent;
+}

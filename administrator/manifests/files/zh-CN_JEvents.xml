@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="1.6" type="file" client="site" method="upgrade">
+<name>Chinese translation for JEvents</name>
+<tag>zh-CN</tag>
+<packagename>zh-CN JEvents</packagename>
+<version>3.1.16</version>
+<creationdate>2013.11.06</creationdate>
+<author>baijianpeng</author>
+<authoremail>
+</authoremail>
+<authorurl>http://www.joomlagate.com/</authorurl>
+<copyright>
+</copyright>
+<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+<description>Chinese package for JEvents</description>
+<fileset>
+<files folder="admin" target="administrator/language/zh-CN">
+	<filename>zh-CN.com_jevents.ini</filename>
+	<filename>zh-CN.com_jevents.menu.ini</filename>
+	<filename>zh-CN.com_jevents.sys.ini</filename>
+	<filename>zh-CN.plg_finder_jevents.ini</filename>
+	<filename>zh-CN.plg_finder_jevents.sys.ini</filename>
+	<filename>zh-CN.plg_search_eventsearch.ini</filename>
+</files>
+<files folder="site" target="language/zh-CN">
+	<filename>zh-CN.com_jevents.ini</filename>
+</files>
+</fileset>
+</extension>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide" >
+	<params >
+		<param name="@spacer" type="jevinfo" default='SETTINGS_RELATED_TO_EXTPLUS_LAYOUT'   menu="hide" label="" description="" />	
+		<param name="extpluswidth" type="list" default="905" label='MAIN_CALENDAR_WIDTH'  description='WIDTH_IN_PIXELS_OF_MAIN_CALENDAR' >
+			<option value="905">Wide (905px)</option>
+			<option value="835">Quite Wide (835px)</option>
+			<option value="765">Medium (765px)</option>
+			<option value="695">Quite Narrow (695px)</option>
+			<option value="625">Narrow (625px)</option>
+			<option value="555">Very Narrow (555px)</option>
+			<option value="485">Extremely Narrow (485px)</option>
+		</param>
+		<param name="epcolourscheme" type="list" default='RED'  label='COLOUR_SCHEME'  description='COLOUR_SCHEME_FOR_EXTPLUS_LAYOUT' >
+			<option value="gray">Gray</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+			<option value="green">Green</option>
+		</param>
+		<param name="epignoretrunc" type="radio" default="1" label='IGNORE_TITLE_TRUNCATION'  description='IGNORE_GLOBAL_JEVENTS_SETTING_FOR_TRUNCATING_THE_TITLE_IN_MONTH_VIEW' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="eptruncpriorpost" type="radio" default="0" label="Truncate Prior/Post Events" description='SHOULD_MONTHLY_VIEW_TRUNCATE_EVENTS_STARTING_IN_PRIOR_MONTH_OR_RUNNING_INTO_FOLLOWING_MONTH' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="eptabularweek" type="radio" default="0" label="JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS" description='JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS_DESC' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="eplistmonth" type="radio" default="0" label="JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS" description='JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS_DESC' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+	</params>
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/"  name="explus"  label="Extplus">
+		<field name="@spacer_ep2" type="jevinfo" default='SETTINGS_RELATED_TO_EXTPLUS_LAYOUT'   menu="hide" label="" description="" />	
+		<field name="extpluswidth" type="list" default="905" label='MAIN_CALENDAR_WIDTH'  description='WIDTH_IN_PIXELS_OF_MAIN_CALENDAR' >
+			<option value="905">Wide (905px)</option>
+			<option value="835">Quite Wide (835px)</option>
+			<option value="765">Medium (765px)</option>
+			<option value="695">Quite Narrow (695px)</option>
+			<option value="625">Narrow (625px)</option>
+			<option value="555">Very Narrow (555px)</option>
+			<option value="485">Extremely Narrow (485px)</option>
+		</field>
+		<field name="epcolourscheme" type="list" default='RED'  label='COLOUR_SCHEME'  description='COLOUR_SCHEME_FOR_EXTPLUS_LAYOUT' >
+			<option value="gray">Gray</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+			<option value="green">Green</option>
+		</field>
+		<field name="epignoretrunc" type="radio" default="1" label='IGNORE_TITLE_TRUNCATION'  description='IGNORE_GLOBAL_JEVENTS_SETTING_FOR_TRUNCATING_THE_TITLE_IN_MONTH_VIEW' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="eptruncpriorpost" type="radio" default="0" label="Truncate Prior/Post Events" description='SHOULD_MONTHLY_VIEW_TRUNCATE_EVENTS_STARTING_IN_PRIOR_MONTH_OR_RUNNING_INTO_FOLLOWING_MONTH' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="eptabularweek" type="radio" default="0" label="JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS" description='JEV_TABULAR_LAYOUT_OF_WEEKLY_EVENTS_DESC' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="eplistmonth" type="radio" default="0" label="JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS" description='JEV_LIST_LAYOUT_OF_MONTHLY_EVENTS_DESC' >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+	</fieldset>
+
+</config>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Anonymous User Event Creation</name>
+	<author>Geraint Edwards</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>(C) 2009-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.3</version>
+	<description></description>
+	<scriptfile>install.php</scriptfile>
+	<files>
+		<filename plugin="jevanonuser">jevanonuser.php</filename>
+		<folder>anonuserlib</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_jevents_jevanonuser.ini</language>
+   	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic"  >
+				<field name="recaptchapublic" type="text" default="" label="JEV_RECAPTCHA_PUBLIC_KEY" description=""  />
+				<field name="recaptchaprivate" type="text" default="" label="JEV_RECAPTCHA_PRIVATE_KEY" description=""  />
+				<field name="canpublishown" type="radio" default="0" label="JEV_CAN_PUBLISH" description=""  >
+					<option value='0'>JNO</option>
+					<option value='1'>JYES</option>
+				</field>
+				<field name="cats" type="category"  multiple="multiple" scope="com_jevents" default="" label="JEV_CATEGORY_RESTRICTIONS" description="JEV_CATEGORY_RESTRICTIONS_DESC"  />
+				<!-- 
+				<field name="allusers" type="radio" default="0" label="JEV_RECAPTCHA_FOR_ALL_USERS" description="JEV_RECAPTCHA_FOR_ALL_USERS_DESC"  >
+					<option value='0'>JNO</option>
+					<option value='1'>JYES</option>
+				</field>
+				//-->
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

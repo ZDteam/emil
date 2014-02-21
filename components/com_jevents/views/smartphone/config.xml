@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<params>
+		<param name="@spacer_sl1" type="jevinfo" default='SETTINGS_RELATED_TO_SMARTPHONE_LAYOUT'   menu="hide" label="" description="" />	
+		<param name="spcolourscheme" type="list" default='RED'  label='COLOUR_SCHEME'  description='COLOUR_SCHEME_FOR_SMARTPHONE_LAYOUT' >
+			<option value="gray">Gray</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+			<option value="green">Green</option>
+		</param>
+		<param name="disablesmartphone" type="jevboolean" default="0" label='JEV_DISABLE_SMARTPHONE_LAYOUT'  description='JEV_DISABLE_SMARTPHONE_LAYOUT_DESC' />
+	</params>
+	
+	<fieldset addfieldpath="/administrator/components/com_jevents/fields/" name="smartphone"  label="SmartPhone">
+		<field name="@spacer_sl1" type="jevinfo" default='SETTINGS_RELATED_TO_SMARTPHONE_LAYOUT'   menu="hide" label="" description="" />	
+		<field name="spcolourscheme" type="list" default='RED'  label='COLOUR_SCHEME'  description='COLOUR_SCHEME_FOR_SMARTPHONE_LAYOUT' >
+			<option value="gray">Gray</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="purple">Purple</option>
+			<option value="green">Green</option>
+		</field>
+		<field name="disablesmartphone" type="jevboolean" default="0" label='JEV_DISABLE_SMARTPHONE_LAYOUT'  description='JEV_DISABLE_SMARTPHONE_LAYOUT_DESC' />
+	</fieldset>
+	
+</config>

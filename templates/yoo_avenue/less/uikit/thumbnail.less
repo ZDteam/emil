@@ -1,0 +1,50 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Thumbnail
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@thumbnail-padding:								8px;
+@thumbnail-border:								@global-border;
+@thumbnail-background:							@global-light-background;
+
+@thumbnail-hover-border:						@global-hover-border;
+@thumbnail-hover-background:					@thumbnail-background;
+
+@thumbnail-caption-color:						@global-color;
+
+//
+// New
+//
+
+@thumbnail-box-shadow:							rgba(0,0,0,0.05);
+@thumbnail-hover-box-shadow:					rgba(0,0,0,0.06);
+
+
+// Component
+// ========================================================================
+
+.hook-thumbnail() {
+	border-radius: @global-border-radius;
+	background-clip: padding-box;
+	box-shadow: 0 1px 3px @thumbnail-box-shadow;
+}
+
+.hook-thumbnail-hover() { box-shadow: 0 3px 6px @thumbnail-hover-box-shadow; }
+
+
+// Caption
+// ========================================================================
+
+.hook-thumbnail-caption() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-thumbnail-misc() {}

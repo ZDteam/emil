@@ -1,0 +1,46 @@
+div#jevcatbar {
+	border:none!important;
+}
+
+div.ev_navigation , #jevents_body, table.ev_table, #jevents_body table.jevicons , .jev_listview .jev_listrow {
+	width:100%;
+}
+.jev_toprow div.previousmonth , .jev_toprow div.nextmonth {  
+    width:30%;
+}
+.jev_toprow div.currentmonth, .jev_listview div.currentmonth{ 
+   width:40%;
+}
+
+.jev_topleft {
+	display:none;
+}
+
+ .jev_pagination {
+	width:100%;
+}
+
+.jev_weeknum{
+	display:none;
+}
+#jevents_body .event_legend_container {
+	width:100%;
+}
+
+
+/* Month calendar layout */
+.jev_row, .jev_daysnames {
+display:none;
+}
+.jev_toprow {
+	height:58px!important;
+}
+#jevents_body .jev_toprow h2, #jevents_body .jev_toprow div.today {
+	width:auto!important;
+}
+
+/* facebook plugin*/
+.facebook iframe {
+	width:auto!important;
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="JEVENTS_LIST_TEMPLATES">
+		<message><![CDATA[JEVENTS_RSVP_LIST_TEMPLATES]]></message>
+		<options var="task" >
+			<option value='templates.list' name="JEVENTS_RSVP_LIST_TEMPLATES" msg="JEVENTS_RSVP_LIST_TEMPLATES" />
+		</options>
+	</view>
+	<state>
+		<name>JEVENTS_RSVP</name>
+		<description>JEVENTS_RSVP_LIST_TEMPLATES</description>
+		<params>
+		</params>
+	</state>
+</metadata>

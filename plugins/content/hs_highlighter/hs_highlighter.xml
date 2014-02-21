@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_content_hs_highlighter</name>
+	<author>Hayato Sugimoto</author>
+	<creationDate>January 2011</creationDate>
+	<copyright>Copyright (C) 2014 Hayato Sugimoto. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>mail@hs-shelf.com</authorEmail>
+	<authorUrl>hs-shelf.com</authorUrl>
+	<version>1.0.13</version>
+	<description>PLG_CONTENT_HS_HIGHLIGHTER_XML_DESC</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="hs_highlighter">hs_highlighter.php</filename>
+		<filename>index.html</filename>
+		<folder>lib</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_hs_highlighter.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_hs_highlighter.sys.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.plg_content_hs_highlighter.ini</language>
+		<language tag="ja-JP">ja-JP/ja-JP.plg_content_hs_highlighter.sys.ini</language>
+		<!--
+		<language tag="fr-FR">fr-FR/fr-FR.plg_content_hs_highlighter.ini</language>
+		-->
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="style" type="list" default="0" label="PLG_CONTENT_HS_HIGHLIGHTER_SELECTSTYLE_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_SELECTSTYLE_DESC">
+					<option value="0">Default</option>
+					<option value="1">Django</option>
+					<option value="2">Eclipse</option>
+					<option value="3">Emacs</option>
+					<option value="4">FadeToGrey</option>
+					<option value="5">Midnight</option>
+					<option value="6">RDark</option>
+					<option value="7">Custom</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced" label="PLG_CONTENT_HS_HIGHLIGHTER_FIELD_LABEL_ADVANCEDPARAMS">
+				<field name="stripbrs" type="list" default="false" label="PLG_CONTENT_HS_HIGHLIGHTER_STRIPTAG_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_STRIPTAG_DESC">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+				<field name="tag" type="text" default="pre" label="PLG_CONTENT_HS_HIGHLIGHTER_TAG_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_TAG_DESC" />
+				
+				<field name="autolink" type="list" default="false" label="PLG_CONTENT_HS_HIGHLIGHTER_AUTOLINK_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_AUTOLINK_DESC">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+				
+				<field name="class-name" type="text" default="" label="PLG_CONTENT_HS_HIGHLIGHTER_CLASS_NAME_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_CLASS_NAME_DESC" />
+				
+				<field name="collapse" type="list" default="false" label="PLG_CONTENT_HS_HIGHLIGHTER_COLLAPSE_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_COLLAPSE_DESC">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+				<field name="html-script" type="list" default="false" label="PLG_CONTENT_HS_HIGHLIGHTER_HTML_SCRIPT_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_HTML_SCRIPT_DESC">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+				
+				<field name="toolbar" type="list" default="true" label="PLG_CONTENT_HS_HIGHLIGHTER_TOOLBAR_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_TOOLBAR_DESC">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+				<field name="other-brushes" type="textarea" default="" label="PLG_CONTENT_HS_HIGHLIGHTER_OTHER_BRUSHES_LABEL" description="PLG_CONTENT_HS_HIGHLIGHTER_OTHER_BRUSHES_DESC" rows="5" cols="50" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+

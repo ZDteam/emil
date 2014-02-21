@@ -1,0 +1,98 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component:		Variables
+// Description:		Defines all color and style related values as variables
+//					to allow easy customization for the most common cases.
+//
+// ========================================================================
+
+
+// Global variables
+// ========================================================================
+
+//
+// Text
+//
+
+@global-color:									#555;
+@global-muted-color:							#999;
+@global-contrast-color:							#fff;
+
+@global-link-color:								#e05b3a;
+@global-link-hover-color:						darken(@global-link-color, 20%);
+
+@global-font-weight: 							300;
+@global-font-size:								14px;
+@global-line-height:							20px;
+
+@global-dark-color:								#2f2f2f;
+
+@global-info-color:								#3578a6;
+@global-success-color:							#139e1a;
+@global-warning-color:							#e2955d;
+@global-danger-color:							#d83044;
+
+//
+// Backgrounds & Borders
+//
+
+@global-background:								#f0f0f0;
+
+@global-primary-background:						mix(@global-primary-gradient-top, @global-primary-gradient-bottom, 40%);
+@global-success-background:						mix(@global-success-gradient-top, @global-success-gradient-bottom, 40%);
+@global-warning-background:						mix(@global-warning-gradient-top, @global-warning-gradient-bottom, 40%);
+@global-danger-background:						mix(@global-danger-gradient-top, @global-danger-gradient-bottom, 40%);
+
+@global-light-background: 						#f7f7f7;
+
+@global-default-background:						#fff;
+@global-default-hover-background:				@global-light-background;
+@global-default-active-background:				#f5f5f5;
+
+@global-border:									rgba(0,0,0,0.07);
+@global-hover-border:							rgba(0,0,0,0.16);
+@global-border-radius:							2px;
+
+//
+// Gradients
+//
+
+@global-default-gradient-top:					#f9f9f9;
+@global-default-gradient-bottom:				#f0f0f0;
+
+@global-primary-gradient-top:					#e4623f;
+@global-primary-gradient-bottom:				#d64c31;
+
+@global-success-gradient-top:					#82d28f;
+@global-success-gradient-bottom:				#5ebf59;
+
+@global-warning-gradient-top:					#f6cc66;
+@global-warning-gradient-bottom:				#edbe4d;
+
+@global-danger-gradient-top:					#57b5e5;
+@global-danger-gradient-bottom:					#319ed6;
+
+//
+// Spacings
+//
+
+@global-margin:									15px;
+@global-large-margin:							25px;
+@global-grid-gutter:							20px;
+@global-grid-large-gutter:						@global-grid-gutter;
+
+//
+// Heights
+//
+
+@global-height:									30px;
+@global-mini-height:							20px;
+@global-small-height:							25px;
+@global-large-height:							40px;
+
+//
+// Z-index
+//
+
+@global-z-index:								1000;

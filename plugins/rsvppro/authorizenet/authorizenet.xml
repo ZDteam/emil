@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5"  type="plugin" group="rsvppro" method="upgrade">	
+	<name>RSVP Pro Payment - Authorize.net SIM</name>
+	<creationDate>June 2013</creationDate>
+	<author>Geraint Edwards</author>
+	<authorUrl>http://www.gwesystems.com</authorUrl>
+	<copyright>Copyright (C) 2012-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<version>3.0.0 RC2</version>
+	<description>RSVP_PRO_AUTHORIZE_SIM_DESC</description>
+	<files>
+		<filename plugin="authorizenet">authorizenet.php</filename>
+		<folder>authorizenet</folder>
+		<folder>anet_php_sdk</folder>		
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_rsvppro_authorizenet.ini</language>
+	</languages>
+
+	<template  name="Authorize.net">
+		<form>
+			<fields>
+				<fieldset name="Authorize.net" addfieldpath="/administrator/components/com_rsvppro/fields/" >
+
+					<field name="AZNMode" type="list" default="test.authorize.net" menu="hide" label="RSVP_GATEWAYS_AUTHORIZE_MODE" description="" >
+						<option value="test.authorize.net" >Sandbox</option>
+						<option value="secure.authorize.net" >Live</option>
+						<option value="www.eProcessingNetwork.Com" >eProcessingNetwork</option>
+					</field>
+					<field name="aztemplate" type="jevhtml" default='Total Fees = {TOTALFEES}&lt;br/&gt;Fees Already Paid= {FEESPAID}&lt;br/&gt;Outstanding Balance = {BALANCE}&lt;br/&gt;&lt;br/&gt;Please proceed to Authorize.net ...&lt;br/&gt;{FORM}'
+			   cols="50" rows="10" label="RSVP_AUTHORIZENET_PAYMENTPAGE_LABEL" description="RSVP_AUTHORIZENET_PAYMENTPAGE_DESC" />
+					<field name="aznotifyppay" type="list" default="1" label='JEV_NOTIFY_AUTHORIZENET_PAYMENT'  description='JEV_NOTIFY_AUTHORIZENET_PAYMENT_DESC'   >
+						<option value="0">JNO</option>
+						<option value="1">JEV_AFTER_PAYMENT_CONFIRMED</option>
+						<option value="2">JEV_AFTER_REGISTRATION</option>
+					</field>
+					<field name="azautoredirect" type="jevboolean"  class="btn-group" default="1" menu="hide" label="RSVP_AUTOREDIRECT_TO_AUTHORIZENET" description="RSVP_AUTOREDIRECT_TO_AUTHORIZENET_DESC" />		
+					<field name="azpaysubject" type="jevtextarea" default='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_SUBJECT'  rows="1" cols="60" label='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_SUBJECT_LABEL'  description='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+					<field name="azpaymessage" type="jevhtml" default='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE'  rows="6" cols="60" label='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE_LABEL'  description='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+				</fieldset>
+			</fields>
+		</form>
+	</template>
+
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic"   addfieldpath="/plugins/rsvppro/authorizenet/authorizenet/fields/" />
+			<fieldset name="basic"   addfieldpath="/administrator/components/com_rsvppro/fields/" >
+
+				<field type="authorizenetcurl" />
+				<field name="login_id" type="text" size="50" default="" label="RSVPPRO_AUTHORIZENET_LOGIN_ID" description="RSVPPRO_AUTHORIZENET_LOGIN_ID_DESC"/>
+				<field name="transaction_key" type="text" ize="50" default="" label="RSVPPRO_AUTHORIZENET_TRANSACTION_KEY" description="RSVPPRO_AUTHORIZENET_TRANSACTION_KEY_DESC"   />
+				<field name="hash" type="text" size="50" default="" label="RSVPPRO_AUTHORIZENET_API_HASH" description="RSVPPRO_AUTHORIZENET_API_HASH_DESC"/>
+				<field name="AZLogFileLocation" type="text" size="70"  default="/administrator/components/com_rsvppro/logs" menu="hide" label="RSVP_GATEWAYS_AUTHORIZE_ACTIVITY_LOG" description="RSVP_GATEWAYS_PAYPAL_LOGFILE_DESC" />
+				<field name="AZNMode" type="list" default="test.authorize.net" menu="hide" label="RSVP_GATEWAYS_AUTHORIZE_MODE" description="" >
+					<option value="test.authorize.net" >Sandbox</option>
+					<option value="secure.authorize.net" >Live</option>
+					<option value="www.eProcessingNetwork.Com" >eProcessingNetwork</option>
+				</field>
+<!--
+				<field name="creditcards" type="list"  multiple="multiple"  size="6" default="" label="RSVPPRO_AUTHORIZENET_CREDITCARDS" description="RSVPPRO_AUTHORIZENET_CREDITCARDS_DESC">
+					<option value="Visa">RSVPPRO_AUTHORIZENET_VISA</option>
+					<option value="Mastercard">RSVPPRO_AUTHORIZENET_MASTERCARD</option>
+					<option value="AmericanExpress">RSVPPRO_AUTHORIZENET_AMERICANEXPRESS</option>
+					<option value="Discover">RSVPPRO_AUTHORIZENET_DISCOVER</option>
+					<option value="DinersClub">RSVPPRO_AUTHORIZENET_DINERSCLUB</option>
+					<option value="JCB">RSVPPRO_AUTHORIZENET_JCB</option>
+				</field>
+//-->
+				<field name="aztemplate" type="jevhtml" default='Total Fees = {TOTALFEES}&lt;br/&gt;Fees Already Paid= {FEESPAID}&lt;br/&gt;Outstanding Balance = {BALANCE}&lt;br/&gt;&lt;br/&gt;Please proceed to Authorize.net ...&lt;br/&gt;{FORM}'
+					   cols="50" rows="10" label="RSVP_AUTHORIZENET_PAYMENTPAGE_LABEL" description="RSVP_AUTHORIZENET_PAYMENTPAGE_DESC"    filter="safehtml"  />
+				<field name="aznotifyppay" type="list" default="1" label='JEV_NOTIFY_AUTHORIZENET_PAYMENT'  description='JEV_NOTIFY_AUTHORIZENET_PAYMENT_DESC'   >
+					<option value="0">JNO</option>
+					<option value="1">JEV_AFTER_PAYMENT_CONFIRMED</option>
+					<option value="2">JEV_AFTER_REGISTRATION</option>
+				</field>
+				<field name="azautoredirect" type="jevboolean" class="btn-group" default="1" menu="hide" label="RSVP_AUTOREDIRECT_TO_AUTHORIZENET" description="RSVP_AUTOREDIRECT_TO_AUTHORIZENET_DESC" />		
+				<field name="azpaysubject" type="jevtextarea" default='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_SUBJECT'  rows="1" cols="60" label='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_SUBJECT_LABEL'  description='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+				<field name="azpaymessage" type="jevhtml" default='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE'  rows="6" cols="60" label='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE_LABEL'  description='JEV_AUTHORIZENET_PAYMENT_CONFIRMATION_MESSAGE_DESC'    filter="safehtml" />
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

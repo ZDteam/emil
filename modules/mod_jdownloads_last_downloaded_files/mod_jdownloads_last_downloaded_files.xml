@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="3.0" method="upgrade">
+        <name>jDownloads Last Downloaded Files</name>
+        <author>Arno Betz</author>
+        <creationDate>2013-05-23</creationDate>
+        <copyright>(C) 2008/2013 Arno Betz. All rights reserved.</copyright>
+        <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+        <authorEmail>info@jdownloads.com</authorEmail>
+        <authorUrl>www.jDownloads.com</authorUrl>
+        <version>3.1</version>
+        <description>MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_DESCRIPTION</description>
+        <files>
+                <filename module="mod_jdownloads_last_downloaded_files">mod_jdownloads_last_downloaded_files.php</filename>
+                <filename>index.html</filename>
+                <filename>mod_jdownloads_last_downloaded_files.css</filename>
+				<filename>helper.php</filename>		
+				<folder>tmpl</folder>				
+        </files>
+        <languages>
+            <language tag="en-GB">en-GB.mod_jdownloads_last_downloaded_files.ini</language>
+			<language tag="en-GB">en-GB.mod_jdownloads_last_downloaded_files.sys.ini</language>
+            <language tag="de-DE">de-DE.mod_jdownloads_last_downloaded_files.ini</language>
+			<language tag="de-DE">de-DE.mod_jdownloads_last_downloaded_files.sys.ini</language>
+        </languages>
+        <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="text_before" type="textarea" cols="30" rows="2" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TEXT_BEFORE_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TEXT_BEFORE_DESC"/>
+                <field name="text_after" type="textarea" cols="30" rows="2" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TEXT_AFTER_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TEXT_AFTER_DESC"/>
+                <field type="spacer" />   
+                <field name="cat_id" type="text" default="0" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_ID_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_ID_DESC"/>
+                <field name="sum_view" type="text" default="5" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO_FILES_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO_FILES_DESC"/>
+                <field name="sum_char" type="text" default="25" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TITLE_CHAR_LENGTH_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TITLE_CHAR_LENGTH_DESC"/>
+                <field name="short_char" type="text" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TITLE_REPLACE_CHAR_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_TITLE_REPLACE_CHAR_DESC"/>
+                <field name="short_version" type="text" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CHAR_BEFORE_RELEASE_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CHAR_BEFORE_RELEASE_DESC"/>
+                <field name="detail_view" type="radio" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_LINK_TO_DETAIL_TITLE" default="1" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_LINK_TO_DETAIL_DESC">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field type="spacer" />                
+                <field name="view_tooltip" type="radio" default="1" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_TOOLTIP" description="">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field name="view_tooltip_length" type="text" default="200" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_TOOLTIP_LENGTH" description=""/>
+                <field type="spacer" />
+                <field name="view_date" type="radio" default="1" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_SHOW_DATE_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_SHOW_DATE_DESC">
+                		<option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+			            <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+		        </field>
+                <field name="view_date_same_line" type="radio" default="0" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_DATE_IN_THE_SAME_LINE_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_DATE_IN_THE_SAME_LINE_DESC">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field name="view_date_text" type="text" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_DATE_TEXT_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_DATE_TEXT_DESC"/>
+                <field name="date_format" type="text" default="Y-m-d H:i:s" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_DATE_FORMAT_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_DATE_FORMAT_DESC"/>
+                <field name="date_alignment" type="list" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_DATE_ALIGN_TITLE" default="left" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_DATE_ALIGN_DESC">
+                        <option value="left">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_LEFT</option>
+                        <option value="right">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_RIGHT</option>
+                        <option value="center">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CENTER</option>
+                </field>
+                <field type="spacer" />
+                <field name="view_user" type="radio" default="1" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_USER_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_USER_DESC">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field name="view_user_by" type="text" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_USER_BY_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_USER_BY_DESC"/>
+                <field type="spacer" />                                
+                <field name="view_pics" type="radio" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_MIME_PIC" default="1" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_MIME_PIC_DESC">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field name="view_pics_size" type="text" default="18" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_SET_SIZE_FROM_MIME_PICS" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_SET_SIZE_FROM_MIME_PICS_DESC"/>
+                <field name="view_numerical_list" type="radio" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_NUMERICAL_LIST" default="0" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_VIEW_NUMERICAL_LIST_DESC">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field type="spacer" />
+                <field name="cat_show" type="radio" default="1" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_DESC">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field name="cat_show_type" type="radio" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TYPE_TITLE" default="all" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TYPE_DESC">
+                        <option value="all">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TYPE_1</option>
+                        <option value="containing">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TYPE_2</option>
+                </field>
+                <field name="cat_show_text" type="text" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TEXT_TITLE" description=""/>
+                <field name="cat_show_text_color" type="text" default="#808080" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TEXT_FONT_COLOR" description=""/>
+                <field name="cat_show_text_size" type="text" default="8pt" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TEXT_FONT_SIZE" description=""/>
+                <field name="cat_show_as_link" type="radio" default="1" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CAT_SHOW_TEXT_AS_LINK" description="">
+                        <option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_YES</option>
+                        <option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_NO</option>
+                </field>
+                <field type="spacer" />
+                <field name="alignment" type="list" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_ALIGN_TITLE" default="left" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_ALIGN_DESC">
+                        <option value="left">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_LEFT</option>
+                        <option value="right">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_RIGHT</option>
+                        <option value="center">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CENTER</option>
+                </field> 
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_LAYOUT_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CLASS_SUFFIX_TITLE" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CLASS_SUFFIX_DESC"/>
+			<field name="spacer6" type="spacer" default="" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_SPACER" description="" />
+			<field name="cache" type="list" default="1" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CACHE_LABEL" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CACHE_DESCRIPTION">
+				<option value="1">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CACHE_USE_GLOBAL</option>
+				<option value="0">MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CACHE_NO_CACHING</option>
+			</field>
+			<field name="cache_time" type="text" default="900" label="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CACHE_TIME_LABEL" description="MOD_JDOWNLOADS_LAST_DOWNLOADED_FILES_CACHE_TIME_DESCRIPTION" />
+		</fieldset>
+		</fields>
+    </config>
+</extension>

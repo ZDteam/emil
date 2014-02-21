@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jomsocial>
+	<component>com_rsvppro</component>
+	<rules>
+		<rule>
+			<name>Register for Event</name>
+			<description>Give points when registered user signs up for an event</description>
+			<action_string>rsvppro.signup</action_string>
+			<publish>true</publish>
+			<points>1</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Cancel Event Registration</name>
+			<description>Remove points when registered user cancels event registration</description>
+			<action_string>rsvppro.cancel</action_string>
+			<publish>true</publish>
+			<points>-1</points>
+			<access_level>1</access_level>
+		</rule>
+	</rules>
+</jomsocial>

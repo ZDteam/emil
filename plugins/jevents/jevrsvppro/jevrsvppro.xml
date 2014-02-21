@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0"  type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Attendance, Invitations and RSVPs</name>
+	<author>Geraint Edwards</author>
+	<creationDate>June 2013</creationDate>
+	<copyright>(C) 2009-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com </authorUrl>
+	<version>3.0.0 RC2</version>
+	<description>Invite attendees to event and manage responses. </description>
+	<files>
+		<filename plugin="jevrsvppro">jevrsvppro.php</filename>
+		<folder>rsvppro</folder>
+		<filename>filters/Hidefornoninvitees.php</filename>
+		<filename>filters/Hidebasedonaccess.php</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_jevents_jevrsvppro.ini</language>
+	</languages> 
+	<scriptfile>rsvppro.scriptfile.php</scriptfile>
+</extension>

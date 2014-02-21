@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="nav_icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="18px" height="80px" viewBox="0 0 18 80" enable-background="new 0 0 18 80" xml:space="preserve">
+<circle id="bg" opacity="0.5" fill="#FFFFFF" enable-background="new    " cx="9" cy="8" r="8"/>
+<circle id="bg:hover" opacity="0.7" fill="#FFFFFF" enable-background="new    " cx="9" cy="28" r="8"/>
+<circle id="dot:hover" opacity="0.7" enable-background="new    " cx="9" cy="28" r="4"/>
+<circle id="bg:active" opacity="0.7" fill="#FFFFFF" enable-background="new    " cx="9" cy="48" r="7"/>
+<circle id="dot:active_1_" opacity="0.7" enable-background="new    " cx="9" cy="48" r="4"/>
+<circle id="bg_current" fill="#FFFFFF" cx="9" cy="68" r="8"/>
+<circle id="dot_current" fill="#A54D60" cx="9" cy="68" r="4"/>
+</svg>

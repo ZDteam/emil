@@ -1,0 +1,54 @@
+#jevents_body , #jev_title{
+	color:inherit!important;
+}
+
+#jevents_body a , 
+#jevents_body .jev_listview a  
+{
+	color:inherit;
+}
+span.jevdateicon2 a span {
+	color:#fff;
+}
+
+#jevents_body table.jevicons {
+	background-color:#fff;
+}
+
+
+#jevents_body .jevdaydata a {
+	color:#eee;
+}
+
+#jevents_body .jevdaydata .eventfull a {
+	color:#111;
+}
+
+.jevtip-text {
+	background-color: #111;
+}
+.jevtt_text {
+	color:#eee;
+}
+
+#jevents_body .event_legend_container {
+		background-color: transparent;
+		border-top:solid #fff 1px;
+}
+.jeventsdark div.jev_daynum{
+	background-color: transparent;
+}
+.jeventsdark  div.jev_daynum_today {
+	background-color:#666;
+}
+.jeventsdark div.jev_daynum span {
+	  border-color: #fff;
+}
+.jeventsdark div.jev_daynum_outofmonth, .jeventsdark div.jev_dayoutofmonth {
+	background-color: #444;
+}
+.jeventsdark div.jev_dayoutofmonth {
+	border-width: 0px 1px 0px 0px;
+	border-style:solid;
+	border-color: #fff;
+}

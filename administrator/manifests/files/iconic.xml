@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="file" method="upgrade">
+	<name>JEvents Iconic Layout</name>
+	<license>By Arrangement</license>
+	<author>Geraint Edwards</author>
+	<authorUrl>http://www.gwesystems.com</authorUrl>
+	<creationDate>May 2013</creationDate>
+	<copyright>2009-2013, Gwe Systems Ltd</copyright>
+	<version>3.2.7</version>
+	<description>
+		Iconic layout for Jevents
+	</description>
+
+	<fileset>
+		<files>
+			<folder>components/com_jevents/views/iconic</folder>
+			<folder>modules/mod_jevents_cal/tmpl/iconic</folder>
+			<folder>modules/mod_jevents_latest/tmpl/iconic</folder>
+			<folder>modules/mod_jevents_legend/tmpl/iconic</folder>			
+		</files>
+	</fileset>
+</extension>

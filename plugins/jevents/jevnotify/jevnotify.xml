@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Event Notifications and Messages</name>
+	<author>Geraint Edwards</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>(C) 2010-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.4</version>
+	<description></description>
+	<scriptfile>install.php</scriptfile>
+	<files>
+		<filename plugin="jevnotify">jevnotify.php</filename>
+		<folder>fields</folder>
+		<filename>sendnotifications.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_jevents_jevnotify.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic"   addfieldpath="/plugins/jevents/jevnotify/fields/" >
+				<field name="neweventnotifications" type="jevnotifylist" multiple="true"  default="0" size="10" label='JEV_USERS_TO_NOTIFY_OF_NEW_EVENTS_PULISHED'  description='JEV_USERS_TO_NOTIFY_OF_NEW_EVENTS_PULISHED_DESC'   >
+					<option value='0'>JEV_NONE</option>
+					<option value='7'>JEV_NOTIFICTION_MODULE</option>
+					<option value='8'>JEV_MANAGED_PEOPLE</option>
+				</field>
+				<field name="changenotificationtype" type="list" default="1" label='JEV_CHANGE_NOTIFICATION_TYPE'  description='JEV_CHANGE_NOTIFICATION_TYPE_DESC'   >
+					<option value='0'>JEV_AUTO</option>
+					<option value='1'>JEV_MANUAL</option>
+				</field>
+				<field name="changenotifications" type="jevnotifylist" multiple="true"  default="0" size="10" label='JEV_USERS_TO_NOTIFY_OF_EVENT_CHANGES'  description='JEV_USERS_TO_NOTIFY_OF_EVENT_CHANGES_DESC'   >
+					<option value='0'>JEV_NONE</option>
+					<option value='3'>JEV_ATTENDEES</option>
+					<option value='4'>JEV_INVITEES</option>
+					<option value='5'>JEV_REMINDEES</option>
+					<option value='6'>JEV_EVENT_CREATORS</option>
+					<option value='7'>JEV_NOTIFICTION_MODULE</option>
+					<option value='8'>JEV_MANAGED_PEOPLE</option>
+				</field>
+				<field name="whichinvitees" type="list" default="0" label='JEV_WHICH_INVITEES'  description='JEV_WHICH_INVITEES_DESC'   >
+					<option value='0'>JEV_ALL_INVITEES</option>
+					<option value='1'>JEV_INVITEES_HAVE_VIEWED_EVENT</option>
+				</field>
+				<field name="deletenotifications" type="jevnotifylist" multiple="true" default="0" size="10" label='JEV_USERS_TO_NOTIFY_OF_EVENT_DELETION'  description='JEV_USERS_TO_NOTIFY_OF_EVENT_DELETION_DESC'   >
+					<option value='0'>JEV_NONE</option>
+					<option value='3'>JEV_ATTENDEES</option>
+					<option value='4'>JEV_INVITEES</option>
+					<option value='5'>JEV_REMINDEES</option>
+					<option value='6'>JEV_EVENT_CREATORS</option>
+					<option value='7'>JEV_NOTIFICTION_MODULE</option>
+					<option value='8'>JEV_MANAGED_PEOPLE</option>
+				</field>
+
+				<field name="newsubject" type="jevtextarea" default='JEV_NEW_EVENT_SUBJECT'  rows="2" cols="40" label='JEV_NEW_EVENT_SUBJECT_LABEL'  description='JEV_NEW_EVENT_MESSAGE_DESC'  />
+				<field name="newmessage" type="jevhtml" filter="raw" default='JEV_NEW_EVENT_MESSAGE'  rows="6" cols="40" label='JEV_NEW_EVENT_MESSAGE_LABEL'  description='JEV_NEW_EVENT_MESSAGE_DESC'  />
+
+				<field name="changesubject" type="jevtextarea" default='JEV_CHANGE_EVENT_SUBJECT'  rows="2" cols="40" label='JEV_CHANGE_EVENT_SUBJECT_LABEL'  description='JEV_NEW_EVENT_MESSAGE_DESC'  />
+				<field name="changemessage" type="jevhtml" filter="raw" default='JEV_CHANGE_EVENT_MESSAGE'  rows="6" cols="40" label='JEV_CHANGE_EVENT_MESSAGE_LABEL'  description='JEV_NEW_EVENT_MESSAGE_DESC'  />
+
+				<field name="deletesubject" type="jevtextarea" default='JEV_DELETE_EVENT_SUBJECT'  rows="2" cols="40" label='JEV_DELETE_EVENT_SUBJECT_LABEL'  description='JEV_NEW_EVENT_MESSAGE_DESC'  />
+				<field name="deletemessage" type="jevhtml" filter="raw" default='JEV_DELETE_EVENT_MESSAGE'  rows="6" cols="40" label='JEV_DELETE_EVENT_MESSAGE_LABEL'  description='JEV_NEW_EVENT_MESSAGE_DESC'  />
+
+				<field name="lag" type="text" default="0"  label='JEV_NOTIFICATION_LAG_IN_SECONDS'  description='JEV_NOTIFICATION_LAG_IN_SECONDS_DESC'  />
+				<field name="batchsize" type="text" default="5"  label='JEV_EMAIL_BATCH_SIZE'  description='JEV_EMAIL_BATCH_SIZE_DESC'  />
+
+				<field name="iplist" type="text" label='JEV_IP_LIST_LABEL'  description='JEV_IP_LIST_DESC'  size="40" />				
+				<field name="shortlifetime" type="list" default="1" label='JEV_SHORT_LIFETIME'  description='JEV_SHORT_LIFETIME_DESC'  >
+					<option value='0'>JNO</option>
+					<option value='1'>JYES</option>					
+				</field>
+
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

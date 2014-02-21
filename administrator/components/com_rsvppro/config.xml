@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset  name="RSVP_ATTENDANCE_OPTIONS" addfieldpath="/administrator/components/com_rsvppro/fields/">	
+		<field name="attendance" type="jevboolean" class="btn-group" default="1" label='JEV_ENABLE_ATTENDANCE'  description='JEV_ENABLE_ATTENDANCE_DESC'  />
+		<field name="attendemails" type="jevboolean" class="btn-group" default="0" label='JEV_ATTEND_EMAILS_LABEL'  description='JEV_ATTEND_EMAILS_DESC'  />
+		<field name="defaultallow" type="list"  default="0" label='JEV_ENABLE_BY_DEFAULT'  description='JEV_ENABLE_BY_DEFAULT_DESC'  >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+			<option value="2">JEV_BY_INVITATION</option>
+		</field>
+
+		<field name="defaultattendstate" type="list" default="1" label='JEV_DEFAULT_ATTENDANCE_STATE'  description='JEV_DEFAULT_ATTENDANCE_STATE_DESC'   >
+			<option value="-1">JEV_NONE</option>
+			<option value="1">JEV_ATTEND</option>
+			<option value="2">JEV_MAYBE</option>
+			<option value="0">JEV_NO</option>
+		</field>
+		<field name="requireconfirmation" type="jevboolean" class="btn-group" default="0" label='JEV_ATTEND_EMAILS_CONFIRM'  description='JEV_ATTEND_EMAILS_CONFIRM_DESC'  />
+		<field name="requireconfirmationpaid" type="jevboolean" class="btn-group" default="0" label='JEV_ATTEND_EMAILS_CONFIRM_PAID_EVENTS'  description='JEV_ATTEND_EMAILS_CONFIRM_PAID_EVENTS_DESC'  />
+		<field name="capacity" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_CAPACITY_TRACKING'  description='JEV_ENABLE_CAPACITY_TRACKING_DESC'  />
+		<field name="waitinglist" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_WAITING_LIST'  description='JEV_ENABLE_WAITING_LIST_DESC'  />
+		<field name="hidefull" type="jevboolean" class="btn-group" default="0" label='JEV_HIDE_FULL_EVENTS'  description='JEV_HIDE_FULL_EVENTS_DESC'  />
+		<field name="allowno" type="jevboolean" class="btn-group" default="0" label='JEV_ALLOW_NO_ATTEND'  description='JEV_ALLOW_NO_ATTEND_DESC'   />
+		<field name="allowmaybe" type="jevboolean" class="btn-group" default="0" label='JEV_ALLOW_MAYBE_ATTEND'  description='JEV_ALLOW_MAYBE_ATTEND_DESC'   />
+		<field name="allowpending" type="jevboolean" class="btn-group" default="0" label='JEV_ALLOW_PENDING_ATTEND'  description='JEV_ALLOW_PENDING_ATTEND_DESC'   />
+
+		<field name="showcf" type="jevboolean" class="btn-group" default="0" label='JEV_SHOW_CUSTOM_FIELDS'  description='JEV_SHOW_CUSTOM_FIELDS_DESC'   />
+		<!--
+		<field name="defaultcf" type="jevdefaultcf" default="0" label='JEV_DEFAULT_CUSTOM_FIELDS'  description='JEV_DEFAULT_CUSTOM_FIELDS_DESC'   />
+		//-->
+		<field name="showtimestamp" type="jevboolean" class="btn-group" default="1" label='JEV_SHOW_TIMESTAMP'  description=""  />
+		<field name="timestampformat" type="jevtextarea" default='JEV_DEFAULT_TIMESTAMP_FORMAT'  rows="1" cols="80" label='JEV_TIMESTAMP_FORMAT_LABEL'  description='JEV_TIMESTAMP_FORMAT_DESC'  />
+			
+		<field name="userdatatype" type="list" default="0" label='JEV_SHOW_USER_NAME_TYPE'  description='JEV_SHOW_USER_NAME_TYPE_DESC'   >
+			<option value="0">JEVR_USERNAME</option>
+			<option value="1">JEVR_NAME</option>
+			<option value="2">JEVR_BOTH</option>
+		</field>
+
+		<field name="showtoanon" type="jevboolean" class="btn-group" default="0" label='JEV_SHOW_ATTENDEES_TO_ANON_USERS'  description='JEV_SHOW_ATTENDEES_TO_ANON_USERS_DESC'  />
+		
+		<field name="shownonattendees" type="jevboolean" class="btn-group" default="0" label='JEV_SHOW_NON_ATTENDEES_IN_LIST'  description='JEV_SHOW_NON_ATTENDEES_IN_LIST_DESC'  />
+		<field name="showunpaidattendees" type="jevboolean" class="btn-group" default="0" label='JEV_SHOW_UNPAID_ATTENDEES_IN_LIST'  description='JEV_SHOW_UNPAID_ATTENDEES_IN_LIST_DESC'  />
+				
+		<!-- <field name="setupstate" type="jevsetupstatus" default="0"  label='_'  /> //-->
+
+		<field name="activitystream" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_ACTIVITY_STREAM'  description='JEV_ENABLE_ACTIVITY_STREAM_DESC'  />
+		<!--
+		<field name="enablemessages" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_SENDING_MESSAGES'  description='JEV_ENABLE_SENDING_MESSAGES_DESC'   />
+		//-->
+		<field name="showattendeecountinlists" type="jevboolean" class="btn-group" default="0" label='JEV_SHOW_ATTENDEE_COUNT_IN_LISTS'  description='JEV_SHOW_ATTENDEE_COUNT_IN_LISTS_DESC'   />
+		<field name="showattendeesinlists" type="jevboolean" class="btn-group" default="0" label='JEV_SHOW_ATTENDEES_IN_LISTS'  description='JEV_SHOW_ATTENDEES_IN_LISTS_DESC'   />
+		<field name="listdateformat" type="jevtextarea" default='JEV_DEFAULT_LISTDATE_FORMAT'  rows="1" cols="80" label='JEV_LIST_FORMAT_LABEL'  description='JEV_LIST_FORMAT_DESC'  />
+		
+		<field name="sortableattendees" type="jevboolean" class="btn-group" default="0" label='JEV_SORTABLE_ATTENDEES'  description='JEV_SORTABLE_ATTENDEES_DESC'  />
+		
+		<field name="defaultinitialstate" type="list"  default="1" label='JEV_DEFAULT_INITIALSTATE'  description='JEV_DEFAULT_INITIALSTATE_DESC'   >
+			<option value="0">JEV_INITIAL_STATE_PENDING</option>
+			<option value="1">JEV_INITIAL_STATE_APPROVED</option>
+		</field>
+		<field name="defaultcancellation" type="list"  default="0" label='JEV_DEFAULT_CANCELLATION'  description='JEV_DEFAULT_CANCELLATION_DESC'   >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+                <field name="cancellation_unpaid_only" type="list"  default="0" label='JEV_CANCELLATION_UNPAID_ONLY'  description='JEV_CANCELLATION_UNPAID_ONLY_DESC'   >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="defaultchanges" type="list"  default="0" label='JEV_DEFAULT_CHANGES'  description='JEV_DEFAULT_CHANGES_DESC'   >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+                  <field name="allowunconfirmedpendingunpaidchanges" type="list"  default="0" label='JEV_ALLOW_UNCONFIRMED_PENDING_UNPAID_CHANGES'  description='JEV_ALLOW_UNCONFIRMED_PENDING_UNPAID_CHANGES_DESC'   >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+
+		<field name="defaultshowattendees" type="list"  default="0" label='JEV_DEFAULT_SHOWATTENDEES'  description='JEV_DEFAULT_SHOWATTENDEES_DESC'   >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+			<option value="2">JEV_BY_INVITATION</option>
+		</field>
+		<field name="overridesendername" type="text" default="" size="50" label='JEV_OVERRIDE_SENDERNAME'  description='JEV_OVERRIDE_SENDERNAME_DESC'   />
+		<field name="overridesenderemail" type="text" default="" size="50" label='JEV_OVERRIDE_SENDEREMAIL'  description='JEV_OVERRIDE_SENDEREMAIL_DESC'   />
+				
+                <field name="testreferrer" type="jevboolean" class="btn-group" default="0" label='JEV_TEST_REFERRER'  description='JEV_TEST_REFERRER_DESC'   />		
+      	</fieldset>
+	<fieldset  name="RSVP_ATTENDANCE_MESSAGES"   >
+		<field name="notifyuser" type="jevboolean" class="btn-group" default="0" label='JEV_ACKNOWLEDGE_USER'  description='JEV_ACKNOWLEDGE_USER_DESC'   />
+		<field name="acksubject" type="jevtextarea" default='JEV_DEFAULT_ACKNOWLEDGE_SUBJECT'  rows="1" cols="80" label='JEV_ACKNOWLEDGE_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="ackmessage" type="jevhtml" default='JEV_DEFAULT_ACKNOWLEDGE_MESSAGE'  rows="6" cols="80" label='JEV_ACKNOWLEDGE_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+
+		<field name="notifycreator" type="list" default="1" label='JEV_NOTIFY_CREATOR'  description='JEV_NOTIFY_CREATOR_DESC'   >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+			<option value="2">JEV_NEW_AND_CHANGED_ONLY</option>
+			<option value="3">JEV_CANCELLED_ONLY</option>
+			<option value="4">JEV_SEND_TO_BCC_ONLY</option>
+		</field>
+		<field name="notifybcc" type="text" default="" label='JEV_NOTIFY_BCC'  description='JEV_NOTIFY_BCC_DESC'  size="80"  />		
+		<field name="notifysubject" type="jevtextarea" default='JEV_DEFAULT_NOTIFY_SUBJECT'  rows="1" cols="80" label='JEV_DEFAULT_NOTIFY_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="notifymessage" type="jevhtml" default='JEV_DEFAULT_NOTIFY_MESSAGE'  rows="6" cols="80" label='JEV_DEFAULT_NOTIFY_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+
+		<field name="cancelsubject" type="jevtextarea" default='JEV_DEFAULT_CANCEL_SUBJECT'  rows="1" cols="80" label='JEV_CANCEL_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="cancelmessage" type="jevhtml" default='JEV_DEFAULT_CANCEL_MESSAGE'  rows="6" cols="80" label='JEV_CANCEL_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+
+		<field name="notifyadmincancelled" type="jevboolean" class="btn-group" default="0" label='JEV_NOTIFY_ADMINCANCELLED'  description='JEV_NOTIFY_ADMINCANCELLED_DESC'   />
+		<field name="admincancelsubject" type="jevtextarea" default='JEV_DEFAULT_ADMINCANCEL_SUBJECT'  rows="1" cols="80" label='JEV_ADMINCANCEL_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="admincancelmessage" type="jevhtml" default='JEV_DEFAULT_ADMINCANCEL_MESSAGE'  rows="6" cols="80" label='JEV_ADMINCANCEL_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		
+		<field name="notifyapproved" type="jevboolean" class="btn-group" default="0" label='JEV_NOTIFY_APPROVED'  description='JEV_NOTIFY_APPROVED_DESC'   />
+		<field name="approvedsubject" type="jevtextarea" default='JEV_DEFAULT_APPROVED_SUBJECT'  rows="1" cols="80" label='JEV_APPROVED_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="approvedmessage" type="jevhtml" default='JEV_DEFAULT_APPROVED_MESSAGE'  rows="6" cols="80" label='JEV_APPROVED_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />		
+		
+		<field name="usercancelsubject" type="jevtextarea" default='JEV_DEFAULT_USERCANCEL_SUBJECT'  rows="1" cols="80" label='JEV_USERCANCEL_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="usercancelmessage" type="jevhtml" default='JEV_DEFAULT_USERCANCEL_MESSAGE'  rows="6" cols="80" label='JEV_USERCANCEL_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />		
+
+		<field name="emailaddressconfirmationsubject" type="jevtextarea" default='JEV_EMAILCONFIRMATION_SUBJECT'  rows="1" cols="80" label='JEV_EMAILCONFIRMATION_SUBJECT_LABEL'  description='JEV_EMAILCONFIRMATION_SUBJECT_LABEL_DESC'  />
+		<field name="emailaddressconfirmationmessage" type="jevhtml" default='JEV_EMAILCONFIRMATION_MESSAGE'  rows="6" cols="80" label='JEV_EMAILCONFIRMATION_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />		
+
+		<field name="waitingliststatussubject" type="jevtextarea" default='JEV_WAITINGLIST_STATUS_SUBJECT'  rows="1" cols="80" label='JEV_WAITINGLIST_STATUS_SUBJECT_LABEL'  description='JEV_WAITINGLIST_STATUS_SUBJECT_LABEL_DESC'  />
+		<field name="waitingliststatusmessage" type="jevhtml" default='JEV_WAITINGLIST_STATUS_MESSAGE'  rows="6" cols="80" label='JEV_WAITINGLIST_STATUS_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />		
+		
+		<field name="cbbcc" type="text" default="" label='JEV_REMINDER_CBPROFILE_BCC_FIELD'  description='JEV_REMINDER_CBPROFILE_BCC_FIELD_DESC'   />
+		<field name="remindplugins" type="jevboolean" class="btn-group" default="0" label='JEV_RUN_MESSAGES_THROUGH_JEVENTS_PLUGINS'  description='JEV_RUN_MESSAGES_THROUGH_JEVENTS_PLUGINS_DESC'  />
+
+	</fieldset>	
+	<fieldset  name="RSVP_TEMPLATE_FIELD_OPTIONS"   >
+		<field name="allowconditional" type="jevboolean" class="btn-group" default="1" label='JEV_ALLOW_CONDITIONAL_FIELDS'  description='JEV_ALLOW_CONDITIONAL_FIELDS_DESC'   />
+		<field name="allowaccessrestrictions" type="jevboolean" class="btn-group" default="1" label='JEV_ALLOW_FIELD_ACCESS_CONDTIONS'  description='JEV_ALLOW_FIELD_ACCESS_CONDTIONS_DESC'   />
+		<field name="standardvisibility" type="jevboolean" class="btn-group" default="1" label='JEV_STANDARD_FIELD_VISIBILITY_OPTIONS'  description='JEV_STANDARD_FIELD_VISIBILITY_OPTIONS_DESC'   />
+		<!-- <field name="enableoptionvalues" type="jevboolean" class="btn-group" default="1" label='JEV_ENABLE_FIELD_OPTION_VALUE'  description='JEV_ENABLE_FIELD_OPTION_VALUE_DESC'   />//-->
+		<field name="allowfieldoptioncapacities" type="jevboolean" class="btn-group" default="0" label='JEV_ALLOW_FIELD_OPTION_CAPACITIES'  description='JEV_ALLOW_FIELD_OPTION_CAPACITIES_DESC'   />
+		<field name="recaptchapublic" type="text" default="" size="80"  label='JEV_RECAPTCHA_PUBLIC_KEY'  description='JEV_RECAPTCHA_PUBLIC_KEY_DESC'   />
+		<field name="recaptchaprivate" type="text" default="" size="80"  label='JEV_RECAPTCHA_PRIVATE_KEY'  description='JEV_RECAPTCHA_PRIVATE_KEY_DESC'   />
+	</fieldset>	
+	<fieldset  name="RSVP_INVITES_OPTIONS"   >
+		<field name="invites" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_INVITATIONS'  description='JEV_ENABLE_INVITATIONS_DESC'  />
+		<!-- disabled until we finish the coding
+                <field name="invites_ical_mail" type="list"  default="0" label='JEV_ENABLE_INVITATIONS_ICAL_MAIL'  description='JEV_ENABLE_INVITATIONS__ICAL_MAIL_DESC'  >
+                        <option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		//-->
+		<field name="defaultallowinvites" type="list"  default="0" label='JEV_ENABLEINVITES_BY_DEFAULT'  description='JEV_ENABLEINVITES_BY_DEFAULT_DESC'  >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="subject" type="jevtextarea" default='JEV_DEFAULT_SUBJECT'  rows="1" cols="80" label='JEV_DEFAULT_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="message" type="jevtextarea" default='JEV_DEFAULT_MESSAGE'  rows="6" cols="80" label='JEV_DEFAULT_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="inviteemails" type="jevboolean" class="btn-group" default="0" label='JEV_INVITE_EMAILS_LABEL'  description='JEV_INVITE_EMAILS_DESC'  />
+		<field name="autoinvite" type="jevtextarea" default="" rows="3" cols="50" label='JEV_AUTO_INVITE'  description='JEV_AUTO_INVITE_DESC'  />
+		<field name="inviteusertype" type="usergroup" default="8" multiple="multiple" label='JEV_MIN_LEVEL_FOR_INVITEES'  description='JEV_MIN_LEVEL_FOR_INVITEES_DESC'  />
+		<field name="invitejoomlagroups" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_JOOMLA_GROUP_INVITATIONS'  description='JEV_ENABLE_JOOMLA_GROUP_INVITATIONS_DESC'  />
+	</fieldset>
+	<fieldset  name="RSVP_REMINDER_OPTIONS"   >
+		<field name="reminders" type="jevboolean" class="btn-group" default="0" label='JEV_ENABLE_REMINDERS'  description='JEV_ENABLE_REMINDERS_DESC'   />
+		<field name="defaultallowreminders" type="list"  default="0" label='JEV_ENABLEREMINDERS_BY_DEFAULT'  description='JEV_ENABLEREMINDERS_BY_DEFAULT_DESC'  >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		
+		<field name="autoremind" type="list"  default="0" label='JEV_AUTO_REMINDER'  description='JEV_AUTO_REMINDER_DESC'   >
+			<option value="0">JEV_NOONE</option>
+			<option value="1">JEV_ATTENDEES</option>
+			<!--<option value="2">JEV_INVITEES</option>//-->
+			<option value="3">RSVP_ALL_REGISTERED_USERS</option>
+			<option value="4">RSVP_EVENT_CREATOR</option>
+		</field>
+		<field name="forceautoremind" type="jevboolean" class="btn-group" default="0" label='JEV_RFORCE_ATTENDEE_AUTOREMIND'  description='JEV_RFORCE_ATTENDEE_AUTOREMIND_DESC'  />
+		<field name="skipunpaid" type="jevboolean" class="btn-group" default="0" label='JEV_SKIP_REMINDERS_TO_UNPAID_ATTENDEES'  description='JEV_SKIP_REMINDERS_TO_UNPAID_ATTENDEES_DESC'  />
+
+		<field name="reminderinterval" type="text" default="24" label='JEV_REMINDER_INTERVAL'  description='JEV_REMINDER_INTERVAL_DESC'   />
+		<field name="remindersubject" type="jevtextarea" default='JEV_DEFAULT_REMINDER_SUBJECT'  rows="1" cols="80" label='JEV_DEFAULT_REMINDER_SUBJECT_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="remindermessage" type="jevtextarea" default='JEV_DEFAULT_REMINDER_MESSAGE'  rows="6" cols="80" label='JEV_DEFAULT_REMINDER_MESSAGE_LABEL'  description='JEV_DEFAULT_MESSAGE_DESC'  />
+		<field name="maxreminders" type="text" default="20" label='JEV_MAX_REMINDER'  description='JEV_MAX_REMINDER_DESC'   />
+		<field name="remindemails" type="jevboolean" class="btn-group" default="0" label='JEV_REMIND_EMAILS_LABEL'  description='JEV_REMIND_EMAILS_DESC'  />
+		<!--<field name="showstatus" type="jevboolean" class="btn-group" default="1" label='JEV_SHOW_STATUS'  description='JEV_SHOW_STATUS_DESC'  />//-->
+
+		<field name="emailkey" type="text" default='EMAIL_KEY'  menu="hide" size="50" label='JEV_RSVP_KEY'  description='JEV_RSVP_KEY_DESC' />
+	</fieldset>
+		
+	<fieldset  name="RSVP_Currency_Formatting">
+		<field name="Currency" type="list" default="USD" menu="hide" label="RSVP_CURRENCY_DEFAULT" labelclass="control-label" description="" >
+			<option value='AUD'>RSVP_CURRENCY_AUSTRALIAN</option>
+			<option value='CAD'>RSVP_CURRENCY_CANADIAN</option>
+			<option value='EUR'>RSVP_CURRENCY_EUROPEAN</option>
+			<option value='GBP'>RSVP_CURRENCY_ENGLISH</option>
+			<option value='JPY'>RSVP_CURRENCY_JAPANESE</option>
+			<option value='USD'>RSVP_CURRENCY_AMERICAN</option>
+			<option value='NZD'>RSVP_CURRENCY_NEWZEALAND</option>
+			<option value='CHF'>RSVP_CURRENCY_SWISS</option>
+			<option value='HKD'>RSVP_CURRENCY_HONGKONG</option>
+			<option value='SGD'>RSVP_CURRENCY_SINGAPORE</option>
+			<option value='SEK'>RSVP_CURRENCY_SWEDISH</option>
+			<option value='DKK'>RSVP_CURRENCY_DANISH</option>
+			<option value='PLN'>RSVP_CURRENCY_POLISH</option>
+			<option value='NOK'>RSVP_CURRENCY_NORWEGIAN</option>
+			<option value='HUF'>RSVP_CURRENCY_HUNGARIAN</option>
+			<option value='CZK'>RSVP_CURRENCY_CZECH</option>
+			<option value='ZAR'>RSVP_CURRENCY_SOUTHAFRICA</option>
+			<option value='BRL'>RSVP_CURRENCY_BRAZIL</option>
+			<option value='TRY'>RSVP_CURRENCY_TURKEY</option>
+			<option value='RMB'>RSVP_CURRENCY_CHINA</option>
+			<option value='MXN'>RSVP_CURRENCY_MEXICO</option>
+			<option value='UPT'>RSVP_CURRENCY_POINTS</option>
+		</field>				
+		<field name="CurrencySymbol" type="text" default="$" menu="hide" label="RSVP_CURRENCY_SYMBOL" description=""  />
+		<field name="CurrencyPlacement" type="list" default="left" menu="hide" label="RSVP_CURRENCY_PLACEMENT" description="" >
+			<option value='left'>RSVP_LEFT</option>
+			<option value='right'>RSVP_RIGHT</option>
+		</field>
+		<field name="CurrencyDecimal" type="text" default="." menu="hide" label="RSVP_CURRENCY_DECIMAL" description=""  />
+		<field name="CurrencyDigits" type="text" default="2" menu="hide" label="RSVP_CURRENCY_DIGITS" description=""  />
+		<field name="CurrencySeparator" type="text" default="," menu="hide" label="RSVP_CURRENCY_SEPARATOR" description=""  />
+
+		<field name="LogFileLocation" type="text" default="/administrator/components/com_rsvppro/logs/" menu="hide" label="RSVP_LOG_FILE" description="RSVP_LOG_FILE_DESC" />
+	</fieldset>	
+	<fieldset  name="JCONFIG_PERMISSIONS_LABEL">
+		<field name="creatersvp" type="usergroup" default="25" label="JEV_CREATE_SESSION_LEVEL" description="JEV_CREATE_SESSION_LEVEL_TIP" />
+		<field name="loc_own" class="rsvp_loc_own" type="usergroup" default="20" label="RSVP_CREATE_OWN_TEMPLATES" description="CREATE_OWN_TEMPLATES_TIP" />
+		<field name="loc_global"  class="rsvp_loc_global"  type="usergroup" default="24" label="RSVP_CREATE_GLOBAL_TEMPLATES" description="RSVP_CREATE_GLOBAL_TEMPLATES_DESC" />
+	</fieldset>
+
+	<fieldset
+		name="JCONFIG_PERMISSIONS_LABEL"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_rsvppro"
+			section="component" />
+	</fieldset>
+
+</config>
+

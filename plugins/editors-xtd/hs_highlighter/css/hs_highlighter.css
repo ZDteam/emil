@@ -1,0 +1,54 @@
+/**
+ * @version		1.0.6
+ * @package		Hs - Highlighter 2014-01-21 
+ * @author		Hayato Sugimoto
+ * @copyright	Copyright (C) 2005 - 2014  Hayatos. All rights reserved.
+ * @license		GNU/GPL
+ */
+
+#hs_fake_bg{
+	background-color:#000000;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1000;
+}
+#hs_actual_content{
+	position:absolute;
+	top:0;
+	left:0;
+	width:500px;
+	background-color:#FFF;
+	padding:30px;	
+	z-index:1001;
+}
+.hs_high_items{
+	margin-bottom:20px;
+}
+.hs_high_items textarea{
+	width:484px;
+	height:150px;
+}
+div.hs_desc{
+	color:#999;
+	font-size:70%;
+	margin-bottom:1em;
+	line-height:1.2;
+}
+
+/* button */
+.hs_high_items a.hs_btn_insert{
+	padding:15px;
+}
+.hs_high_items a.hs_btn_insert span.inserttext{
+	padding:0 15px;
+}
+/**
+ * CSS 3
+ */
+#hs_actual_content{
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+}
+a.hs_btn_insert{
+	text-shadow:1px 1px 2px rgba(255,255,255,0.9);
+}

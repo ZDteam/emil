@@ -1,0 +1,105 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:								mix(@navbar-gradient-top, @navbar-gradient-bottom, 40%);
+@navbar-color:									fade(@global-contrast-color, 50%);
+
+@navbar-link-color:								@global-link-color;
+@navbar-link-hover-color:						lighten(@global-link-color, 10%);
+
+@navbar-nav-height:								55px;
+@navbar-nav-line-height:						@navbar-nav-height;
+@navbar-nav-padding-horizontal:					20px;
+@navbar-nav-color:								fade(@global-contrast-color, 60%);
+@navbar-nav-font-size:							round(@global-font-size * 1.07);
+@navbar-nav-font-weight:						@global-font-weight;
+@navbar-nav-font-family:						'Roboto Condensed';
+
+@navbar-nav-hover-background:					rgba(0,0,0,0.2);
+@navbar-nav-hover-color:						@global-contrast-color;
+
+@navbar-nav-onclick-background:					rgba(0,0,0,0.3);
+@navbar-nav-onclick-color:						@global-link-color;
+
+@navbar-nav-active-background:					@global-primary-background;
+@navbar-nav-active-color:						@global-contrast-color;
+
+@navbar-brand-font-size:						round(@global-font-size * 1.28);
+@navbar-brand-color:							fade(@global-contrast-color, 90%);
+@navbar-brand-hover-color:						@global-contrast-color;
+
+@navbar-toggle-font-size:						round(@global-font-size * 1.28);
+@navbar-toggle-color:							fade(@global-contrast-color, 60%);
+@navbar-toggle-hover-color:						@global-contrast-color;
+
+//
+// New
+//
+
+@navbar-gradient-top:							#383838;
+@navbar-gradient-bottom:						#2f2f2f;
+
+@navbar-nav-active-gradient-top:				@global-primary-gradient-top;
+@navbar-nav-active-gradient-bottom:				@global-primary-gradient-bottom;
+
+@navbar-box-shadow:								rgba(0,0,0,0.0);
+@navbar-nav-hover-box-shadow:					rgba(0,0,0,0.1);
+@navbar-nav-onclick-box-shadow:					rgba(0,0,0,0.1);
+
+@navbar-text-transform:							uppercase;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {
+	background-image: -webkit-linear-gradient(top, @navbar-gradient-top, @navbar-gradient-bottom);
+	background-image: linear-gradient(to bottom, @navbar-gradient-top, @navbar-gradient-bottom);
+	box-shadow: inset 0 -1px 0 @navbar-box-shadow;
+}
+
+
+// Sub-object: `uk-navbar-nav`
+// ========================================================================
+
+// Hover
+.hook-navbar-nav-hover() {
+	position: relative;
+	z-index: 1;
+	box-shadow: inset 0 2px 4px @navbar-nav-hover-box-shadow;
+}
+
+// OnClick
+.hook-navbar-nav-onclick() { box-shadow: inset 0 2px 4px @navbar-nav-onclick-box-shadow; }
+
+// Active
+.hook-navbar-nav-active() {
+	background-origin: border-box; /* 1 */
+	background-image: -webkit-linear-gradient(top, @navbar-nav-active-gradient-top, @navbar-nav-active-gradient-bottom);
+	background-image: linear-gradient(to bottom, @navbar-nav-active-gradient-top, @navbar-nav-active-gradient-bottom);
+}
+
+
+// Sub-object: `uk-navbar-content`
+// ========================================================================
+
+.hook-navbar-content() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {
+
+	/* Navbar nav */
+	.uk-navbar-nav > li > a { text-transform: @navbar-text-transform; }
+
+}

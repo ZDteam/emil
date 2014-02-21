@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Calendar Restrictions</name>
+	<author>Geraint Edwards</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>(C) 2010-2012 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.0</version>
+	<description>JEV_SPECIFIED_CALENDARS_DESC</description>
+	<files>
+		<filename plugin="jevcalendar">jevcalendar.php</filename>
+		<filename>filters/Calendar.php</filename>
+		<filename>filters/Multicalendar.php</filename>
+	</files>
+	<scriptfile>install.php</scriptfile>
+	<languages folder="admin">
+		<language tag="en-GB">language/en-GB/en-GB.plg_jevents_jevcalendar.ini</language>
+   	</languages>	
+</extension>

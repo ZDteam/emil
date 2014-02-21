@@ -1,0 +1,69 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Alert
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@alert-margin-vertical:							@global-margin;
+
+
+@alert-background:								#f4fbff;
+@alert-color:									@global-info-color;
+
+@alert-success-background:						#f4fff5;
+@alert-success-color:							@global-success-color;
+
+@alert-warning-background:						#fffef2;
+@alert-warning-color:							@global-warning-color;
+
+
+@alert-danger-background:						#fff7f8;
+@alert-danger-color:							@global-danger-color;
+
+//
+// New
+//
+
+@alert-border:									fade(desaturate(@global-info-color, 20%), 30%);
+@alert-success-border:							fade(desaturate(@global-success-color, 20%), 30%);
+@alert-warning-border:							fade(desaturate(@global-warning-color, 20%), 40%);
+@alert-danger-border:							fade(desaturate(@global-danger-color, 20%), 30%);
+
+
+
+// Component
+// ========================================================================
+
+.hook-alert() {
+	border: 1px solid @alert-border;
+	border-radius: @global-border-radius;
+}
+
+
+// Modifier: `uk-alert-success`
+// ========================================================================
+
+.hook-alert-success() { border-color: @alert-success-border; }
+
+
+// Modifier: `uk-alert-warning`
+// ========================================================================
+
+.hook-alert-warning() { border-color: @alert-warning-border; }
+
+
+// Modifier: `uk-alert-danger`
+// ========================================================================
+
+.hook-alert-danger() { border-color: @alert-danger-border; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-alert-misc() {}

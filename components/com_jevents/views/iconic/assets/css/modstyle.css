@@ -1,0 +1,195 @@
+#extcal_minical table tr,#extcal_minical table td{
+	border:none!important;
+}
+#extcal_minical .extcal_navbar {
+	background-image: url(../images/bg1.gif);
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #B4B4B6;
+}
+#extcal_minical .extcal_tiny_add_event_link {
+	font-family: Verdana;
+	font-size: 9px;
+	font-weight: normal;
+	color:#575767;
+	text-decoration: none;
+}
+#extcal_minical TABLE.extcal_weekdays {
+	background-image: url(../images/bg1.gif);
+	background-repeat: repeat-x;
+	border-top: 1px solid #FFFFFF;
+	width:135px;
+	border-collapse:collapse;
+	border-spacing:0px;
+	border-width:0px;
+	text-align:center;
+}
+#extcal_minical TD.extcal_weekdays {
+	font-family: "Trebuchet MS", Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 4px;
+	vertical-align:top;
+	height:24px;
+	text-align:center;
+}
+#extcal_minical .extcal_small {
+	font-family: Verdana;
+	font-size: 9px;
+	color:#575767;
+	text-decoration: none;
+}
+#extcal_minical .extcal_small:link,#extcal_minical .extcal_small:visited {
+	text-decoration: none;
+}
+#extcal_minical .extcal_small:hover {
+	text-decoration: underline;
+}
+
+#extcal_minical .extcal_daycell,#extcal_minical .extcal_todaycell,
+#extcal_minical .extcal_sundaycell,#extcal_minical .extcal_othermonth {
+	font-family: "Trebuchet MS", Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 9px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color:#555555;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+#extcal_minical .extcal_todaycell {
+	color:#99AAAA;
+	background-image: url(../images/rect.gif);
+}
+
+#extcal_minical .extcal_sundaycell {
+	color:#99AAAA;
+}
+
+#extcal_minical .extcal_othermonth {
+	color:#99AAAA;
+}
+
+#extcal_minical .extcal_daylink, #extcal_minical .extcal_sundaylink,
+#extcal_minical .extcal_busylink  {
+	font-family: "Trebuchet MS", Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 9px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#extcal_minical .extcal_daylink:link,#extcal_minical .extcal_daylink:visited {
+	color:#555555;
+}
+
+#extcal_minical .extcal_busylink:link,#extcal_minical .extcal_busylink:visited { 
+	color:#2266EE;
+	text-decoration: none; 
+}
+
+#extcal_minical .extcal_sundaylink:link,#extcal_minical .extcal_sundaylink:visited {
+	color:#99AAAA;
+}
+
+#extcal_minical .extcal_month_label {
+	font-family: Verdana, Arial, "Microsoft Sans Serif"; 
+	font-size: 10px;
+	font-weight: bold;
+	color: #565666;
+}
+#extcal_minical .extcal_picture 
+#extcal_minical .extcal_weekcell {
+  margin: 0px;
+  padding: 0px;
+  text-align:center;
+}
+
+/* Latest Events*/
+div.jeventslatest {
+	width:auto!important;
+}
+.jev_clear {
+	clear:both;
+}
+
+.jevdateiconmod {
+	display:block;
+	width:40px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	float:left;
+	margin:3px 5px 3px 3px;
+}
+a.jevdateiconmod  {text-decoration:none!important;}
+a.jevdateiconmod div {width:100%!important;}
+.jeventslatest .jeviconnotdate {
+	margin:3px 0px 3px 48px!important;
+	border-style:solid;
+	border-width:0px 4px 0px 0px;
+	padding-right:3px!important;
+	width:auto!important;
+}
+
+span.jevdateicon1, span.jevdateicon2 {
+	margin:0px;
+	display:block;
+}
+
+/** GRAY **/
+.jev_gray .jevdateiconmod {
+	background-color: #d8e0e4;
+	color:#606f79!important;
+	border:solid 1px #d8e0e4;
+}
+.jev_gray .jevdateicon1 {
+	background-color: #606f79;
+	color:#d8e0e4!important;
+}
+/** RED **/
+.jev_red .jevdateiconmod {
+	background-color: #c20025;
+	color:#fff!important;
+	border:solid 1px #c20025;
+}
+.jev_red .jevdateicon1 {
+	background-color: #fff;
+	color:#c20025!important;
+}
+/** BLUE **/
+.jev_blue .jevdateiconmod {
+	background-color: #194fa4;
+	color:#fff!important;
+	border:solid 1px #194fa4;
+}
+.jev_blue .jevdateicon1 {
+	background-color: #fff;
+	color:#194fa4!important;
+}
+/** GREEN **/
+.jev_green .jevdateiconmod {
+	background-color: #045908;
+	color:#fff!important;
+	border:solid 1px #045908;
+}
+.jev_green .jevdateicon1 {
+	background-color: #fff;
+	color:#045908!important;
+}
+/** PURPLE **/
+.jev_purple .jevdateiconmod {
+	background-color: #4d096e;
+	color:#fff!important;
+	border:solid 1px #4d096e;
+}
+.jev_purple .jevdateicon1 {
+	background-color: #fff;
+	color:#4d096e!important;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: edit.xml 1357 2010-10-26 16:03:06Z royceharding $ -->  
+<metadata>
+	<view title="COM_JEVPEOPLE_LIST_PEOPLE_TITLE">
+		<message><![CDATA[COM_JEVPEOPLE_LIST_PEOPLE_DESC]]></message>
+		<options var="layout" >
+			<option value='people' name="COM_JEVPEOPLE_LIST_PEOPLE_TMPL_TITLE" msg="COM_JEVPEOPLE_LIST_PEOPLE_TMPL_DESC" />
+			<option value='list' name="COM_JEVPEOPLE_MANAGE_PEOPLE_TMPL_TITLE" msg="COM_JEVPEOPLE_MANAGE_PEOPLE_TMPL_DESC" />
+                                                      <option value='people_blog' name="COM_JEVPEOPLE_LIST_PEOPLE_BLOG_TMPL_TITLE" msg="COM_JEVPEOPLE_LIST_PEOPLE_BLOG_TMPL_DESC" />
+		</options>
+		<options var="task" >
+			<option value='people.people' name="COM_JEVPEOPLE_LIST_PEOPLE_TMPL_TITLE" msg="COM_JEVPEOPLE_LIST_PEOPLE_TMPL_DESC" />
+			<option value='people.list' name="COM_JEVPEOPLE_MANAGE_PEOPLE_TMPL_TITLE" msg="COM_JEVPEOPLE_LIST_PEOPLE_TMPL_DESC" />
+                                                      <option value='people.list' name="COM_JEVPEOPLE_LIST_PEOPLE_BLOG_TMPL_TITLE" msg="COM_JEVPEOPLE_LIST_PEOPLE_BLOG_TMPL_DESC" />
+		</options>
+	</view>
+	<state>
+		<name>COM_JEVPEOPLE_LIST_PEOPLE_TITLE</name>
+	</state>
+</metadata>

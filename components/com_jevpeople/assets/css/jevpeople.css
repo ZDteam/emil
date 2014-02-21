@@ -1,0 +1,40 @@
+/* 
+    Document   : jevpeople
+    Created on : Jul 22, 2012, 7:20:20 PM
+    Author     : carcam
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.jevresource-title {
+    display:block;
+    float:left;
+}
+
+.jevresource-field {
+    display:block;
+    clear:right;
+}
+
+.jevresource-bloglayout-image{
+    float:left;
+    margin-right: 10px;
+}
+.jevresource-container {
+border: 1px solid #DDDDDD;
+float: left;
+margin-bottom: 20px;
+margin-left: 3%;
+margin-top: 20px;
+min-height: 120px;
+padding: 10px 20px;
+width: 40%;
+}
+
+.jevresource-container h3{
+    margin-top: 0px!important;
+}
+
+
+table.adminform tr.row0 { background-color: #f9f9f9; }
+table.adminform tr.row1 { background-color: #eeeeee; }

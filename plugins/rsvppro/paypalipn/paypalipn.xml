@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5"  type="plugin" group="rsvppro" method="upgrade">
+	<name>RsvpPro - PayPal IPN</name>
+	<author>Geraint Edwards</author>
+	<creationDate>June 2013</creationDate>
+	<copyright>(C) 2010-13 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.0 RC2</version>
+	<description>RSVP_PRO_PAYPAL_IPN_DESC</description>
+	<files>
+		<filename plugin="paypalipn">paypalipn.php</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_rsvppro_paypalipn.ini</language>
+	</languages>
+	
+	<template  name="Paypal IPN">
+		<form>
+			<fields>
+				<fieldset name="Paypal IPN" addfieldpath="/administrator/components/com_rsvppro/fields/" >
+	
+					<field name="PayPalMode" type="list" default="www.sandbox.paypal.com" menu="hide" label="RSVP_GATEWAYS_PAYPAL_MODE" description="" >
+						<option value="www.sandbox.paypal.com" >Sandbox</option>
+						<option value="www.paypal.com" >Live</option>
+					</field>
+					<field name="DefaultPayPalAccount" type="text" default="someone@somewhere.com" menu="hide" label="RSVP_GATEWAYS_PAYPAL_ACCOUNT" description="" />
+					<field name="securepaypal" type="jevboolean"  class="btn-group"  default="1" menu="hide" label="RSVP_USE_SSL_TO_CONNECT_TO_PAYPAL" description="RSVP_USE_SSL_TO_CONNECT_TO_PAYPAL_DESC" />
+					<field name="template" type="jevhtml" default='Total Fees = {TOTALFEES}&lt;br/&gt;Fees Already Paid= {FEESPAID}&lt;br/&gt;Outstanding Balance = {BALANCE}&lt;br/&gt;&lt;br/&gt;Please proceed to paypal ...&lt;br/&gt;{FORM}'
+			   cols="50" rows="10" label="JEV_PAYPAL_PAYMENTPAGE_LABEL" description="JEV_PAYPAL_PAYMENTPAGE_DESC" />
+		<!--<field name="PayPalLogFileLocation" type="text" default="" menu="hide" label="RSVP_GATEWAYS_PAYPAL_ACTIVITY_LOG" description="RSVP_GATEWAYS_PAYPAL_LOGFILE_DESC" />//-->
+		<!--<field name="Paypal IPN allowoverride" type="jevboolean"  class="btn-group" default="1" menu="hide" label="RSVP_ALLOW_PAYPAL_OVERRIDE" description="RSVP_ALLOW_PAYPAL_OVERRIDE_DESC" />//-->
+					<field name="notifypplpay" type="list" default="1" label='JEV_NOTIFY_PAYPAL_PAYMENT'  description='JEV_NOTIFY_PAYPAL_PAYMENT_DESC'   >
+						<option value="0">JEV_NO</option>
+						<option value="1">JEV_AFTER_PAYMENT_CONFIRMED</option>
+						<option value="2">JEV_AFTER_REGISTRATION</option>
+					</field>
+					<field name="autoredirect" type="jevboolean"  class="btn-group" default="1" menu="hide" label="RSVP_AUTOREDIRECT_TO_PAYPAL" description="RSVP_AUTOREDIRECT_TO_PAYPAL_DESC" />		
+					<field name="pplpaysubject" type="jevtextarea" default='JEV_PAYPAL_PAYMENT_CONFIRMATION_SUBJECT'  rows="1" cols="60" label='JEV_PAYPAL_PAYMENT_CONFIRMATION_SUBJECT_LABEL'  description='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+					<field name="pplpaymessage" type="jevhtml" default='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE'  rows="6" cols="60" label='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE_LABEL'  description='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+					<field name="cbfieldname" type="text" default="cb_paypalemail" size="20" label="JEV_CB_PAYPAL_FIELD_NAME" description="JEV_CB_PAYPAL_FIELD_NAME_DESC" />
+					<field name="jsfieldname" type="text" default="FIELD_PAYPALEMAIL" size="20" label="JEV_JS_PAYPAL_FIELD_NAME" description="JEV_JS_PAYPAL_FIELD_NAME_DESC" />
+				</fieldset>
+			</fields>
+		</form>
+	</template>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic"   addfieldpath="/administrator/components/com_rsvppro/fields/" >
+				<field name="PayPalMode" type="list" default="www.sandbox.paypal.com" menu="hide" label="RSVP_GATEWAYS_PAYPAL_MODE" description="" >
+					<option value="www.sandbox.paypal.com" >Sandbox</option>
+					<option value="www.paypal.com" >Live</option>
+				</field>
+				<field name="DefaultPayPalAccount" type="text" default="someone@somewhere.com" menu="hide" label="RSVP_GATEWAYS_PAYPAL_ACCOUNT" description="" />
+				<field name="securepaypal" type="jevboolean"  class="btn-group" default="1" menu="hide" label="RSVP_USE_SSL_TO_CONNECT_TO_PAYPAL" description="RSVP_USE_SSL_TO_CONNECT_TO_PAYPAL_DESC" />
+				<field name="PayPalLogFileLocation" type="text" size="70"  default="/administrator/components/com_rsvppro/logs" menu="hide" label="RSVP_GATEWAYS_PAYPAL_ACTIVITY_LOG" description="RSVP_GATEWAYS_PAYPAL_LOGFILE_DESC" />
+				<field name="template" type="jevhtml" default='Total Fees = {TOTALFEES}&lt;br/&gt;Fees Already Paid= {FEESPAID}&lt;br/&gt;Outstanding Balance = {BALANCE}&lt;br/&gt;&lt;br/&gt;Please proceed to paypal ...&lt;br/&gt;{FORM}'
+					   cols="50" rows="10" label="JEV_PAYPAL_PAYMENTPAGE_LABEL" description="JEV_PAYPAL_PAYMENTPAGE_DESC"  filter="safehtml"  />		
+				<!--<field name="Paypal IPN allowoverride" type="jevboolean"  class="btn-group" default="1" menu="hide" label="RSVP_ALLOW_PAYPAL_OVERRIDE" description="RSVP_ALLOW_PAYPAL_OVERRIDE_DESC" />//-->
+				<field name="notifypplpay" type="list" default="1" label='JEV_NOTIFY_PAYPAL_PAYMENT'  description='JEV_NOTIFY_PAYPAL_PAYMENT_DESC'   >
+					<option value="0">JEV_NO</option>
+					<option value="1">JEV_AFTER_PAYMENT_CONFIRMED</option>
+					<option value="2">JEV_AFTER_REGISTRATION</option>
+				</field>
+				<field name="autoredirect" type="jevboolean"  class="btn-group" default="1" menu="hide" label="RSVP_AUTOREDIRECT_TO_PAYPAL" description="RSVP_AUTOREDIRECT_TO_PAYPAL_DESC" />		
+				<field name="pplpaysubject" type="jevtextarea" default='JEV_PAYPAL_PAYMENT_CONFIRMATION_SUBJECT'  rows="1" cols="60" label='JEV_PAYPAL_PAYMENT_CONFIRMATION_SUBJECT_LABEL'  description='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE_DESC'  />
+				<field name="pplpaymessage" type="jevhtml" default='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE'  rows="6" cols="60" label='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE_LABEL'  description='JEV_PAYPAL_PAYMENT_CONFIRMATION_MESSAGE_DESC'  filter="safehtml" />
+				<field name="cbfieldname" type="text" default="cb_paypalemail" size="20" label="JEV_CB_PAYPAL_FIELD_NAME" description="JEV_CB_PAYPAL_FIELD_NAME_DESC" />
+				<field name="jsfieldname" type="text" default="FIELD_PAYPALEMAIL" size="20" label="JEV_JS_PAYPAL_FIELD_NAME" description="JEV_JS_PAYPAL_FIELD_NAME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

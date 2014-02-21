@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="JEVENTS_LIST_SESSIONS">
+		<message><![CDATA[JEVENTS_RSVP_LIST_SESSIONS]]></message>
+		<options var="layout" >
+			<option value='overview' name="JEVENTS_RSVP_LIST_SESSIONS" msg="JEVENTS_RSVP_LIST_SESSIONS" />
+		</options>
+		<options var="task" >
+			<option value='sessions.list' name="JEVENTS_RSVP_LIST_SESSIONS" msg="JEVENTS_RSVP_LIST_SESSIONS" />
+		</options>
+	</view>
+	<state>
+		<name>JEVENTS_RSVP</name>
+		<description>JEVENTS_RSVP_LIST_SESSIONS</description>
+		<params>
+		</params>
+	</state>
+</metadata>

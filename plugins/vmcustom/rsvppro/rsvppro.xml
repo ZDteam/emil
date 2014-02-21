@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5"  type="plugin" group="vmcustom" method="upgrade">	
+	<name>VM - Custom - RSVP Pro Tickets</name>
+	<creationDate>June 2013</creationDate>
+	<author>Geraint Edwards</author>
+	<authorUrl>http://www.jevents.net</authorUrl>
+	<copyright>Copyright (C) 2012-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<version>3.0.0 RC2</version>
+	<description>RSVP_VM_TICKET_DESCRIPTION</description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_vmcustom_rsvppro.ini</language>
+	</languages>
+	<files>
+		<filename plugin="rsvppro">rsvppro.php</filename>
+		<filename >index.html</filename>
+	</files>
+</extension>

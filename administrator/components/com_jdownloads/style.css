@@ -1,0 +1,147 @@
+
+.icon-48-jdlogo {
+	background-image: url(../com_jdownloads/images/jd_logo_48.png);	
+}
+.icon-32-template    { 
+        background-image: url(../com_jdownloads/images/template32.png); 
+}
+
+.icon-32-upload32    { 
+        background-image: url(../com_jdownloads/images/upload32.png); 
+}
+
+.icon-32-files32    { 
+        background-image: url(../com_jdownloads/images/files32.png); 
+}
+
+.icon-32-downloads_2    { 
+        background-image: url(../com_jdownloads/images/downloads_2.png); 
+}
+
+.adminheading {
+	background: #F0F0F0 !important;
+	border-right: 0px;
+	padding-left: 5px;
+	color: #993300;
+	/*font: 108%;*/
+}
+
+table.jdadminpanel {
+	background-color: #FFF;
+	font-family : Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	/*color: #C64934;*/
+	font-size : 11px;
+	/*font-weight: bold;*/
+	text-align: left;
+}
+table.jdadminpanel th {
+	background: none;
+	text-align: left;
+	height: 30px;
+	width: 99%;
+	padding-left: 10px;
+	border-bottom: 5px solid #fff;
+}
+
+div.current textarea, div.current select {
+    clear: none;
+    float: none !important;
+    margin: 3px 0 0 2px;
+} 
+
+input.jdinput {
+    float: none !important;
+}   
+
+/* backend navigation */ 
+.pagination-list {
+    height: 36px;
+    margin: 18px 0;
+}
+.pagination-list ul {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 0;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.pagination-list li {
+    display: inline;
+}
+
+.pagination-list a,
+.pagination-list span {
+    float: left;
+    padding: 0 14px;
+    line-height: 34px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+}
+
+.pagination-list a:hover,
+.pagination-list .active a,
+.pagination-list .active span {
+    background-color: #f5f5f5;
+}
+.pagination-list .active a,
+.pagination-list .active span {
+    color: #999;
+    cursor: default;
+}
+.pagination-list .disabled span,
+.pagination-list .disabled a,
+.pagination-list .disabled a:hover {
+    color: #999;
+    background-color: transparent;
+    cursor: default;
+}
+.pagination-list li:first-child a,
+.pagination-list li:first-child span {
+    border-left-width: 1px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+.pagination-list li:last-child a,
+.pagination-list li:last-child span {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+.pagination-list-centered {
+    text-align: center;
+}
+
+/**
+ * Saving order icon styling in admin tables
+ */
+a.saveorder {
+    background: url("images/filesave.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 16px;
+    margin-right: 8px;
+    overflow: hidden;
+    width: 16px;
+}
+
+a.saveorder.inactive {
+	background-position: 0 -16px;
+}
+
+input, textarea .jdinput{
+    width: auto !important;
+}    

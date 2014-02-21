@@ -1,0 +1,112 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Base
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@base-body-background:									@global-background;
+@base-body-font-family:									'Roboto Condensed';
+@base-body-font-weight:									@global-font-weight;
+@base-body-font-size:									@global-font-size;
+@base-body-line-height:									@global-line-height;
+@base-body-color:										@global-color;
+
+@base-link-color:										@global-link-color;
+@base-link-hover-color:									@global-link-hover-color;
+@base-em-color:											#719bb0;
+@base-ins-background:									#f3f2e6;
+@base-ins-color:										#5c5a4c;
+@base-mark-background:									@base-ins-background;
+@base-mark-color:										@base-ins-color;
+@base-selection-background:								@global-primary-background;
+@base-selection-color:									#fff;
+
+@base-margin-vertical:									@global-margin;
+
+@base-heading-font-family:								'Roboto Condensed';
+@base-heading-font-weight:								@global-font-weight;
+@base-heading-color:									@global-dark-color;
+@base-heading-text-transform:							none;
+@base-heading-margin-top:								@global-large-margin;
+@base-h1-font-size:										round(@global-font-size * 2.57);
+@base-h1-line-height:									round(@base-h1-font-size * 1.16);
+@base-h2-font-size:										round(@global-font-size * 1.71);
+@base-h2-line-height:									round(@base-h2-font-size * 1.25);
+@base-h3-font-size:										round(@global-font-size * 1.28);
+@base-h3-line-height:									round(@base-h3-font-size * 1.33);
+@base-h4-font-size:										round(@global-font-size * 1.14);
+@base-h4-line-height:									round(@base-h4-font-size * 1.37);
+@base-h5-font-size:										@global-font-size;
+@base-h5-line-height:									@global-line-height;
+@base-h6-font-size:										round(@global-font-size * 0.85);
+@base-h6-line-height:									round(@base-h6-font-size * 1.5);
+
+@base-hr-border:										@global-border;
+
+@base-blockquote-border:								@global-border;
+@base-blockquote-small-color:							@global-muted-color;
+@base-blockquote-font-size:								round(@global-font-size * 1.14);
+@base-blockquote-line-height:							round(@base-blockquote-font-size * 1.37);
+
+@base-code-color:										#6ab58c;
+@base-code-font-size:									round(@global-font-size * 0.85);
+
+@base-pre-background:									@global-light-background;
+@base-pre-color:										@global-color;
+@base-pre-font-size:									round(@global-font-size * 0.85);
+@base-pre-line-height:									round(@base-pre-font-size * 1.5);
+
+//
+// New
+//
+
+@base-code-border:										@global-border;
+@base-code-background:									@global-light-background;
+
+@base-pre-border:										@global-border;
+
+
+// Body
+// ========================================================================
+
+.hook-base-body() {}
+
+
+// Code and preformatted text
+// ========================================================================
+
+.hook-base-code() {
+	padding: 0 4px;
+	border: 1px solid @base-code-border;
+	border-radius: @global-border-radius;
+	background: @base-code-background;
+}
+
+.hook-base-code-reset() {
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+
+.hook-base-pre() {
+	border: 1px solid @base-pre-border;
+	border-radius: @global-border-radius;
+}
+
+// Miscellaneous
+// ========================================================================
+
+.hook-base-misc() {
+
+	/* Hyperlink */
+	a:not([class]),
+	:not([class*='uk-nav']) a:not([class]) {
+		-webkit-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
+	}
+}

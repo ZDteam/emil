@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="1.6" type="file" client="site" method="upgrade">
+<name>Czech Language for JEvents Addons</name>
+<tag>cs-CZ</tag>
+<version>3.140205</version>
+<creationDate>11.10.03</creationDate>
+<author>MMSTUDIO</author>
+<authorEmail/>
+<description>Czech Language for JEvents Addons</description>
+<fileset>
+<files folder="admin" target="administrator/language/cs-CZ">
+	<filename>cs-CZ.com_jeventstags.ini</filename>
+	<filename>cs-CZ.com_jeventstags.menu.ini</filename>
+	<filename>cs-CZ.com_jeventstags.sys.ini</filename>
+	<filename>cs-CZ.com_jevlocations.ini</filename>
+	<filename>cs-CZ.com_jevlocations.menu.ini</filename>
+	<filename>cs-CZ.com_jevlocations.sys.ini</filename>
+	<filename>cs-CZ.com_jevpeople.ini</filename>
+	<filename>cs-CZ.com_jevpeople.menu.ini</filename>
+	<filename>cs-CZ.com_jevpeople.sys.ini</filename>
+	<filename>cs-CZ.com_rsvppro.ini</filename>
+	<filename>cs-CZ.com_rsvppro.menu.ini</filename>
+	<filename>cs-CZ.com_rsvppro.sys.ini</filename>
+	<filename>cs-CZ.mod_tabbedmodules.ini</filename>
+	<filename>cs-CZ.mod_tabbedmodules.sys.ini</filename>
+	<filename>cs-CZ.plg_community_jevents.ini</filename>
+	<filename>cs-CZ.plg_content_jevent_embed.ini</filename>
+	<filename>cs-CZ.plg_content_jevent_embed.sys.ini</filename>
+	<filename>cs-CZ.plg_content_jevlocation_embed.ini</filename>
+	<filename>cs-CZ.plg_editors-xtd_jevents.ini</filename>
+	<filename>cs-CZ.plg_editors-xtd_jevents.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_agendaminutes.ini</filename>
+	<filename>cs-CZ.plg_jevents_agendaminutes.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevanonuser.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevanonuser.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcalendar.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcalendar.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcatcal.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcatcal.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcb.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcck.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevcustomfields.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevfacebook.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevfeatured.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevfeatured.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevfiles.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevfiles.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevgroupevent.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevhiddendetail.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevhiddendetail.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevjsstream.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevlocations.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevmatchingevents.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevmatchingevents.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevmetatags.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevmetatags.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevnotify.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevnotify.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevpaidsubs.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevpeople.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevrsvp.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevrsvp.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevrsvppro.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevsendfb.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevtags.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevtimelimit.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevudjacomments.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevusers.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevusers.sys.ini</filename>
+	<filename>cs-CZ.plg_jevents_jevweekdays.ini</filename>
+	<filename>cs-CZ.plg_jnews_jnewsjevents.ini</filename>
+	<filename>cs-CZ.plg_jnewsletter_jnewsjevents.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_authorizenet.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_manual.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_paypalipn.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_smsreminders.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_smsreminders.sys.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_userpoints.ini</filename>
+	<filename>cs-CZ.plg_rsvppro_virtuemart.ini</filename>
+	<filename>cs-CZ.plg_search_jevlocsearch.ini</filename>
+	<filename>cs-CZ.plg_system_autotweetjevents.ini</filename>
+	<filename>cs-CZ.plg_system_autotweetjevents.sys.ini</filename>
+	<filename>cs-CZ.plg_user_jevuser.ini</filename>
+	<filename>cs-CZ.plg_vmcustom_rsvppro.ini</filename>
+</files>
+<files folder="site" target="language/cs-CZ">
+	<filename>cs-CZ.com_jeventstags.ini</filename>
+	<filename>cs-CZ.com_jevlocations.ini</filename>
+	<filename>cs-CZ.com_jevpeople.ini</filename>
+	<filename>cs-CZ.com_rsvppro.ini</filename>
+	<filename>cs-CZ.mod_jevents_dynamiclegend.ini</filename>
+	<filename>cs-CZ.mod_jevents_notify.ini</filename>
+	<filename>cs-CZ.mod_jevents_paidsubs.ini</filename>
+</files>
+</fileset>
+</extension>

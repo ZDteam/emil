@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Specific Users</name>
+	<author>Geraint Edwards</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>(C) 2009-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.1</version>
+	<description>JEV_USERS_DESC</description>
+	<files>
+		<filename plugin="jevusers">jevusers.php</filename>
+		<filename>filters/Activeuser.php</filename>
+		<filename>filters/Userssearch.php</filename>
+		<filename>filters/Privateevents.php</filename>
+		<filename>filters/Noprivateevents.php</filename>
+		<filename>filters/Nopublicevents.php</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_jevents_jevusers.ini</language>
+	</languages>
+	<scriptfile>install.php</scriptfile>
+	<config>
+		<fields name="params">
+			<fieldset name="basic"   addfieldpath="//administrator/components/com_jevents/fields/" >
+				<!--
+				<field name="searchtype" type="radio" default="0" label="JEV_SEARCH_TYPE" description="" >
+					<option value="0">JEV_FREE_TEXT</option>
+					<option value="1">JEV_FROM_LIST</option>
+				</field>
+				//-->
+				<field name="enableprivate" type="radio" default="0" label="JEV_ENABLE_PRIVATE_EVENTS" class="btn-group" description="" >
+					<option value="0">JEV_Disable</option>
+					<option value="1">JEV_Enable</option>
+				</field>
+				<field name="enablehidden" type="radio" default="0" label="JEV_ENABLE_HIDDEN_EVENTS" class="btn-group" description="JEV_ENABLE_HIDDEN_EVENTS_DESC" >
+					<option value="0">JEV_Disable</option>
+					<option value="1">JEV_Enable</option>
+				</field>
+				<field name="hidedetailonly" type="jevboolean" class="btn-group" default="0" label="JEV_HIDE_DETAIL_ONLY" 
+				description="JEV_HIDE_DETAIL_ONLY_DESC" />
+				<field name="hiddentitle" type="text" size="40" default="" label="JEV_HIDDEN_EVENT_TITLE" description="JEV_HIDDEN_EVENT_TITLE_DESC" />
+				<field name="hiddendesc" type="textarea" cols="40" rows="4" default="" label="JEV_HIDDEN_EVENT_DESCRIPTION" description="JEV_HIDDEN_EVENT_DESCRIPTION_DESC" />
+
+				<field name="showattending" type="jevboolean" class="btn-group" default="1" label="JEV_SHOW_ATTENDING" />
+				<field name="showattended" type="jevboolean" class="btn-group" default="0" label="JEV_SHOW_ATTENDED"  />
+
+				<field name="allowadmin" type="jevboolean" class="btn-group" default="0" label="JEV_ALLOW_ADMIN"  />
+
+				<field  type="jevinfo" default="JEV_EXPERTUSERS_ONLY" />
+
+				<field name="defaultstate" type="list" default="-1" label="JEV_DEFAULT_STATE" description="JEV_DEFAULT_STATE_DESC" >
+					<option value="0">PUBLIC_EVENT</option>
+					<option value="1">PRIVATE_EVENT</option>
+					<option value="2">JOMSOCIAL_EVENT</option>
+					<option value="3">JEV_DETAILS_PRIVATE</option>
+					<option value="4">JOMSOCIAL_GROUP_EVENT</option>
+					<option value="6">JEV_CB_CONNECTION_EVENT</option>
+					<option value="5">GROUPJIVE_GROUP_EVENT</option>
+				</field>
+
+				<field name="forcestate" type="list" default="-1" label="JEV_FORCED_STATE" description="JEV_FORCED_STATE_DESC" >
+					<option value="0">JEV_IGNORE_FORCED_STATE</option>
+					<option value="1">JEV_FORCE_PRIVATE_EVENT</option>
+					<option value="2">JEV_FORCE_JOMSOCIAL_EVENT</option>
+					<option value="3">JEV_FORCE_HIDDEN_EVENT</option>
+					<option value="4">JEV_FORCE_JOMSOCIAL_GROUP</option>
+				</field>
+
+				<field name="jsgrouprestrict" type="jevboolean"  class="btn-group" default="0" label="JEV_JOMSOCIAL_GROUP_RESTRICT_TO_CREATOR" />
+
+				<field name="override_publish_permission" type="jevboolean" class="btn-group" default="0" label="JEV_ALLOW_PUBLISH_PRIVATE"  description="JEV_ALLOW_PUBLISH_PRIVATE_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

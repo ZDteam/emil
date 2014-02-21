@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_jevpeople">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="COM_JEVPEOPLE_CREATE_DESC" />
+		<action name="core.createglobal" title="JACTION_CREATE_GLOBALPEOPLE" description="COM_JEVPEOPLE_CREATE_GLOBALPEOPLE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_JEVPEOPLE_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_JEVPEOPLE_EDIT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDIT_STATE" description="COM_JEVPEOPLE_EDITSTATE_DESC" />
+		<action name="core.uploadimages" title="JACTION_UPLOADIMAGES_PEOPLE" description="COM_JEVPEOPLE_UPLOADIMAGES_DESC" />
+	</section>
+	<section name="category">
+		<action name="core.create" title="JACTION_CREATE" description="COM_JEVPEOPLE_CATEGORIES_CREATE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_JEVPEOPLE_CATEGORIES_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_JEVPEOPLE_CATEGORIES_EDIT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDIT_STATE" description="COM_JEVPEOPLE_CATEGORIES_EDITSTATE_DESC" />
+	</section>	
+</access>

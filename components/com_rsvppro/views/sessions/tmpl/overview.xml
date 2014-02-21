@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: calendar.xml 2282 2011-07-06 09:36:22Z geraintedwards $ --> 
+<metadata>
+
+	<layout title="COM_RSVPPRO_LIST_SESSIONS">
+		<help
+			key = "COM_RSVPPRO_LIST_SESSIONS_VIEW_HELP"
+		/>
+		<message>
+			<![CDATA[COM_RSVPPRO_LIST_SESSIONS_DESC]]>
+		</message>
+	</layout>
+	
+	<state>
+		<name>JEVENTS_RSVP</name>
+		<description>JEVENTS_RSVP_LIST_SESSIONS</description>
+		<params  addpath="/administrator/components/com_jevents/elements/">
+			<field name="personallist" type="list" default="0" menu="hide"  label="RSVP_LIST_EVENTS_ATTENDING" description="RSVP_LIST_EVENTS_ATTENDING_DESC"  >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+				<option value="2">RSVP_APPROVED_ONLY</option>		
+				<option value="3">RSVP_LIST_EVENTS_ATTENDED_BY_ANYONE</option>						
+				<option value="4">RSVP_LIST_EVENTS_CREATED_BY_LOGGED_IN_USER</option>						
+			</field>
+			<field name="showattendeescol" type="list" default="1" menu="hide"  label="RSVP_LIST_SHOW_ATTENDEES_COLUMN" description="RSVP_LIST_SHOW_ATTENDEES_COLUMN_DESC"  >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+				<option value="2">RSVP_NUMBERS_ONLY</option>				
+			</field>
+			<field name="showcapacitycol" type="jevboolean" default="1" menu="hide"  label="RSVP_LIST_SHOW_CAPACITY_COLUMN" description="RSVP_LIST_SHOW_CAPACITY_COLUMN_DESC"  />
+		</params>
+	</state>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params" >
+		<fieldset name="component" label="RSVP_PRO_OPTIONS"   addfieldpath="/administrator/components/com_jevents/fields/">
+			<field name="personallist" type="list" default="0" menu="hide"  label="RSVP_LIST_EVENTS_ATTENDING" description="RSVP_LIST_EVENTS_ATTENDING_DESC"  >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+				<option value="2">RSVP_APPROVED_ONLY</option>				
+				<option value="3">RSVP_LIST_EVENTS_ATTENDED_BY_ANYONE</option>						
+				<option value="4">RSVP_LIST_EVENTS_CREATED_BY_LOGGED_IN_USER</option>						
+			</field>
+			<field name="showattendeescol" type="list" default="1" menu="hide"  label="RSVP_LIST_SHOW_ATTENDEES_COLUMN" description="RSVP_LIST_SHOW_ATTENDEES_COLUMN_DESC"  >
+				<option value="0">JEV_NO</option>
+				<option value="1">JEV_YES</option>
+				<option value="2">RSVP_NUMBERS_ONLY</option>				
+			</field>
+			<field name="showcapacitycol" type="jevboolean" default="1" menu="hide"  label="RSVP_LIST_SHOW_CAPACITY_COLUMN" description="RSVP_LIST_SHOW_CAPACITY_COLUMN_DESC"  />
+		</fieldset>
+	</fields>
+</metadata>

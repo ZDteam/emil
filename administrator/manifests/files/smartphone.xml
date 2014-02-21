@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="file" method="upgrade">
+	<name>JEvents Smartphone Layout</name>
+	<license>By Arrangement</license>
+	<author>Geraint Edwards</author>
+	<authorUrl>http://www.gwesystems.com</authorUrl>
+	<creationDate>May 2013</creationDate>
+	<copyright>2009-2013, Gwe Systems Ltd</copyright>
+	<version>3.0.4</version>
+	<description>
+		Smartphone layout for Jevents
+	</description>
+
+	<fileset>
+		<files>
+			<folder>components/com_jevents/views/smartphone</folder>
+			<folder>modules/mod_jevents_cal/tmpl/smartphone</folder>
+			<folder>modules/mod_jevents_latest/tmpl/smartphone</folder>
+			<folder>modules/mod_jevents_legend/tmpl/smartphone</folder>			
+		</files>
+	</fileset>
+</extension>

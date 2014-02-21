@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user" method="upgrade">
+	<name>User - Create JEvents Authorised User</name>
+	<author>JEvents Project</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2010-2011 GWE Systems Ltd.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorurl>www.jevents.net</authorurl>
+	<version>3.0</version>
+	<description>Automatically convert Joomla users into JEvents Authorised Users on Login</description>
+	<files>
+		<filename plugin="jevuser">jevuser.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_user_jevuser.ini</language>
+	</languages>		
+	<config>
+		<fields name="params">
+			<fieldset name="basic"   addfieldpath="/administrator/components/com_jevents/fields/" >
+				<field 
+					name="minuserlevel" 
+					type="usergroup" 
+					default="2" 
+					label="PLG_JEVENTS_JEVUSER_MINIMUM_USER_LEVEL_LABEL" 
+					description="PLG_JEVENTS_JEVUSER_MINIMUM_USER_LEVEL_DESC"	/>			
+				<field 
+					name="enabled" 
+					type="jevboolean" 
+					default="1" 
+					label="PLG_JEVENTS_JEVUSER_ENABLED_LABEL"
+					description="PLG_JEVENTS_JEVUSER_ENABLED_DESC"	/>
+				<field 
+					name="cancreate" 
+					type="jevboolean" 
+					default="1" 
+					label="PLG_JEVENTS_JEVUSER_CAN_CREATE_LABEL"
+					description="PLG_JEVENTS_JEVUSER_CAN_CREATE_DESC"	/>
+				<field 
+					name="publishown" 
+					type="jevboolean" 
+					default="1" 
+					label="PLG_JEVENTS_JEVUSER_CAN_PUBLISH_LABEL"
+					description="PLG_JEVENTS_JEVUSER_CAN_PUBLISH_DESC"	/>
+				<field 
+					name="deleteown" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_CAN_DELETE_LABEL"
+					description="PLG_JEVENTS_JEVUSER_CAN_DELETE_DESC" />
+				<field 
+					name="editall" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_EDIT_ALL_LABEL"
+					description="PLG_JEVENTS_JEVUSER_EDIT_ALL_DESC"	/>
+				<field 
+					name="publishall" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_PUBLISH_ALL_LABEL"
+					description="PLG_JEVENTS_JEVUSER_PUBLISH_ALL_DESC"	/>
+				<field 
+					name="deleteall" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_DELETE_ALL_LABEL"
+					description="PLG_JEVENTS_JEVUSER_DELETE_ALL_DESC"	/>
+				<field 
+					name="uploadimages" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_UPLOAD_IMAGES_LABEL"
+					description="PLG_JEVENTS_JEVUSER_UPLOAD_IMAGES_DESC"	/>
+				<field 
+					name="uploadfiles" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_UPLOAD_FILES_LABEL"
+					description="PLG_JEVENTS_JEVUSER_UPLOAD_FILES_DESC"	/>
+				<field 
+					name="ownextras" 
+					type="jevboolean" 
+					default="1" 
+					label="PLG_JEVENTS_JEVUSER_OWN_EXTRAS_LABEL"
+					description="PLG_JEVENTS_JEVUSER_OWN_EXTRAS_DESC"	/>
+				<field 
+					name="globalextras" 
+					type="jevboolean" 
+					default="0" 
+					label="PLG_JEVENTS_JEVUSER_GLOBAL_EXTRAS_LABEL"
+					description="PLG_JEVENTS_JEVUSER_GLOBAL_EXTRAS_DESC"	/>
+				<field 
+					name="categories" 
+					type="text" 
+					default="all" 
+					label="PLG_JEVENTS_JEVUSER_CATEGORIES_LABEL" 
+					description="PLG_JEVENTS_JEVUSER_CATEGORIES_DESC"	/>
+				<field 
+					name="calendars" 
+					type="text" 
+					default="all" 
+					label="PLG_JEVENTS_JEVUSER_CALENDARS_LABEL" 
+					description="PLG_JEVENTS_JEVUSER_CALENDARS_DESC" />
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

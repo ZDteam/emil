@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="jevents" method="upgrade">
+	<name>JEvents - Managed People</name>
+	<author>Geraint Edwards</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>(C) 2009-2013 GWE Systems Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.9</version>
+	<description>Assign People/Organizations from a managed list to event details.  Assign artists or booking agencies to an event.</description>
+	<files>
+		<filename plugin="jevpeople">jevpeople.php</filename>
+		<filename>jevpeople_acceptrole.php</filename>
+		<filename>filters/Peoplesearch.php</filename>
+		<filename>filters/Peoplemultilookup.php</filename>
+		<filename>filters/Peoplelookup.php</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_jevents_jevpeople.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="inlists" type="radio" default="0" label='JEV_AVAILABLE_IN_LISTS'  description='JEV_AVAILABLE_IN_LISTS_DESC'  >
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="detailpopup" type="radio" default="0" label='JEV_DETAIL_POPUP'  description='JEV_DETAIL_POPUP_TIP'  >
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field 
+					name="gwidth" 
+					type="text" 
+					default="200" 
+					label="PLG_JEVENTS_JEVPEOPLE_GOOGLE_MAP_WIDTH_LABEL" 
+					description="PLG_JEVENTS_JEVPEOPLE_GOOGLE_MAP_WIDTH_DESC" 
+				/>				
+				<field 
+					name="gheight" 
+					type="text" 
+					default="150" 
+					label="PLG_JEVENTS_JEVPEOPLE_GOOGLE_MAP_HEIGHT_LABEL" 
+					description="PLG_JEVENTS_JEVPEOPLE_GOOGLE_MAP_HEIGHT_DESC" 
+				/>
+				
+			</fieldset>
+		</fields>	
+	</config>
+	
+</extension>

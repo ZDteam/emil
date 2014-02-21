@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="file" method="upgrade">
+	<name>Com Translations for zh_CN</name>
+	<author>http://stackideas.com</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://stackideas.com</authorUrl>
+	<creationDate>2014-02-14 01:05:44</creationDate>
+	<copyright>Copyright 2009 - 2011 StackIdeas. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.0</version>
+	<description>This translation is for zh_CN</description>
+	<fileset>
+		<files folder="admin" target="administrator/language/zh-CN">
+			<filename>zh-CN.com_easyblog.ini</filename>
+			<filename>zh-CN.com_easyblog.sys.ini</filename>
+		</files>
+		<files folder="site" target="language/zh-CN">
+			<filename>zh-CN.com_easyblog.ini</filename>
+		</files>
+	</fileset>
+</extension>

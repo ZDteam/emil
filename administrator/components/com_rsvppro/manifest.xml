@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="2.5.0" type="component" method="upgrade">
+	<name>RSVP Pro</name>
+	<creationDate>June 2013</creationDate>
+	<author>GWE Systems Ltd</author>
+	<copyright>(C) 2009-2013 GWE Systems Ltd</copyright>
+	<licence>http://www.gnu.org/copyleft/gpl.html GNU/GPL</licence>
+	<authorEmail>via website forum</authorEmail>
+	<authorUrl>www.jevents.net </authorUrl>
+	<version>3.0.0 RC2</version>
+	<description>Component that supports user registration, invites and reminders for JEvents. </description>
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>views</folder>
+		<filename>rsvppro.defines.php</filename>
+		<filename>rsvppro.php</filename>
+		<filename>jomsocial_rule.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_rsvppro.ini</language>
+   	</languages> 
+	<scriptfile>install.rsvppro.php</scriptfile>
+	<administration>
+		<menu>COM_RSVPPRO</menu>
+		<submenu>
+			<menu task="sessions.list">RSVP_SESSIONS</menu>
+			<menu task="templates.overview">RSVP_TEMPLATES</menu>
+			<menu task="params.edit">RSVP_CONFIGURATION</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>fields</folder>
+			<folder>helpers</folder>
+			<folder>libraries</folder>
+			<folder>logs</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>rsvppro.defines.php</filename>
+			<filename>rsvppro.php</filename>
+			<filename>templates.xml</filename>
+		</files>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_rsvppro.ini</language>
+			<language tag="en-GB">en-GB.com_rsvppro.sys.ini</language>
+	   	</languages>
+
+	</administration>
+</extension>

@@ -1,0 +1,55 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Overlay
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@overlay-area-background:							fade(@global-primary-background, 80%);
+@overlay-area-icon:									"\f054";
+@overlay-area-icon-color:							@global-contrast-color;
+
+@overlay-caption-background:						rgba(0,0,0,0.5);
+@overlay-caption-padding:							@global-margin;
+@overlay-caption-color:								@global-contrast-color;
+
+
+// Sub-object `uk-overlay-area`
+// ========================================================================
+
+.hook-overlay-area() {}
+.hook-overlay-area-icon() {}
+
+
+// Sub-object `uk-overlay-caption`
+// ========================================================================
+
+.hook-overlay-caption() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-overlay-misc() {
+
+	.uk-overlay { overflow: hidden; }
+
+	.uk-overlay img {
+		-webkit-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
+		-webkit-transform-origin: bottom left;
+		transform-origin: bottom left;
+	}
+
+	.uk-overlay:hover .uk-overlay-area { left: 0; }
+
+	.uk-overlay:hover img > {
+		-webkit-transform: scale(1.2) translate(-20px);
+		transform: scale(1.2) translate(-20px);
+	}
+
+}

@@ -1,0 +1,83 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Comment
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@comment-header-margin-bottom:                          @global-margin;
+
+@comment-avatar-margin-right:                           @global-margin;
+
+@comment-title-font-size:                               round(@global-font-size * 1.14);
+@comment-title-line-height:                             round(@comment-title-font-size * 1.37);
+
+@comment-meta-color:                                    @global-muted-color;
+@comment-meta-font-size:                                round(@global-font-size * 0.78);
+@comment-meta-line-height:                              round(@comment-meta-font-size * 1.45);
+
+@comment-list-margin-top:                               @global-margin + 10px;
+
+//
+// New
+//
+
+@comment-padding:                                       10px;
+@comment-border:                                        @global-border;
+@comment-background:                                    @global-light-background;
+
+@comment-primary-border:                        		@global-primary-background;
+
+
+// Sub-object `uk-comment-header`
+// ========================================================================
+
+.hook-comment-header() {
+    padding: @comment-padding;
+    border: 1px solid @comment-border;
+    border-radius: @global-border-radius;
+    background: @comment-background;
+}
+
+// Sub-object `uk-comment-avatar`
+// ========================================================================
+
+.hook-comment-avatar() {}
+
+
+// Sub-object `uk-comment-title`
+// ========================================================================
+
+.hook-comment-title() {}
+
+
+// Sub-object `uk-comment-meta`
+// ========================================================================
+
+.hook-comment-meta() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-comment-misc() {
+
+    /* Sub-object `uk-comment-body` */
+    .uk-comment-body {
+        padding-left: @comment-padding;
+        padding-right: @comment-padding;
+    }
+
+    .uk-comment-primary {
+
+    	.uk-comment-header { border: 2px solid @comment-primary-border; }
+
+    	.uk-comment-title { color: @global-link-color; }
+
+    }
+
+}

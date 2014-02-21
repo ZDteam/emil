@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide" >
+	<fieldset name="component"
+			  label="COM_JEVPEOPLE_CREATION_OPTIONS"
+			  addfieldpath="/administrator/components/com_jevpeople/fields/" 	>
+	
+		<!--<field name="loc_own" type="usergroup" default="20" label='CREATE_OWN_PEOPLE'  description='CREATE_OWN_PEOPLE_TIP'  />//-->
+		<field name="max_art" type="text" size="20" default="5" label='JEV_MAX_NUMBER'  description='JEV_MAX_NUMBER_TIP'  />
+		<!--<field name="loc_global" type="usergroup" default="24" label='CREATE_GLOBAL_PEOPLE'  description='CREATE_GLOBAL_PEOPLE_TIP'  />//-->
+
+		<field name="commondefault" type="jevboolean" default="0" label='JEV_GLOBAL_BY_DEFAULT'  description='JEV_GLOBAL_BY_DEFAULT_TIP'  />
+
+		<field name="linktouser" type="list" default="0" label='OFFER_LINK_TO_USER'  description='OFFER_LINK_TO_USER_TIP'  >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_ONE</option>
+			<option value="2">JEV_ONE_PER_TYPE</option>
+			<option value="3">JEV_MULTIPLE</option>
+		</field>
+		
+		<!--<field name="upimageslevel" type="usergroup" default="24" label='JEV_UPLOAD_IMAGES'  description='JEV_UPLOAD_IMAGES_TIP'  />//-->
+				
+		<field name="maxupload" type="text" size="20" default="1000000" label='JEV_UPLOAD_MAX_SIZE'  description='JEV_UPLOAD_MAX_SIZE_TIP'  />		
+		<field name="imagew" type="text" size="20" default="300" label='JEV_SCALED_WIDTH'  description='JEV_SCALED_WIDTH_TIP'  />		
+		<field name="imageh" type="text" size="20" default="225" label='JEV_SCALED_HEIGHT'  description='JEV_SCALED_HEIGHT_TIP'  />		
+		<field name="thumbw" type="text" size="20" default="120" label='THUMBNAIL_WIDTH'  description='THUMBNAIL_WIDTH_TIP'  />		
+		<field name="thumbh" type="text" size="20" default="90" label='THUMBNAIL_HEIGHT'  description='THUMBNAIL_HEIGHT_TIP'  />		
+		<field name="no_thumbanil" type="text" size="20" default="1500000" label='MAX_SIZE_FOR_THUMBNAIL'  description='MAX_SIZE_FOR_THUMBNAIL_TIP'  />
+	
+		<field name="template" type="jevtemplate" default="0" label='JEV_FIELD_TEMPLATE'  description='JEV_FIELD_TEMPLATE_DESC'  />
+	
+		<field name="personselect" type="list" default="0" label='PERSON_SELECT_IN_EDIT'  description='PERSON_SELECT_IN_EDIT_TIP'  >
+			<option value="0">SINGLE_SELECT_BUTTON</option>
+			<option value="1">SEPARATE_BUTTONS_PER_TYPE</option>
+		</field>
+	
+	</fieldset>
+
+	<fieldset
+		name="googlemap"
+		label="COM_JEVPEOPLE_GOOGLE_MAP"
+		addfieldpath="/administrator/components/com_jevpeople/fields/"
+	>
+
+		
+		<field name="googlemaps" type="text" size="80" default="http://maps.googleapis.com" label='GOOGLE_MAPS_URL'  description="" />
+		<field name="googlemapskey" type="text" size="80" default="" label='GOOGLE_MAPS_API_KEY'  description="" />
+		<field
+			name="googledirections" 
+			size="80"
+			type="text" 
+			default="http://maps.google.com" 
+			label="COM_JEVPEOPLE_FIELD_GOOGLEDIRECTIONS_URL_LABEL" 
+			description="COM_JEVPEOPLE_FIELD_GOOGLEDIRECTIONS_URL_DESC"
+		/>
+		
+		<field name="long" type="text" size="20" default="" label='INITIAL_LONGITUDE'  description="" />
+		<field name="lat" type="text" size="20" default="" label='INITIAL_LATITUDE'  description="" />
+		<field name="zoom" type="text" size="20" default="10" label='INITIAL_ZOOM'  description="" />
+		
+	</fieldset>
+
+	<fieldset
+		name="eventdetail"
+		label="COM_JEVPEOPLE_EVENT_DETAILS"
+		addfieldpath="/administrator/components/com_jevpeople/fields/"
+	>
+		
+		<field name="presentation" type="list" default="0" label='LAYOUT_IN_EVENT_DETAIL'  description='LAYOUT_IN_EVENT_DETAIL_TIP' >
+			<option value="0">JEV_DIV_LI</option>
+			<option value="1">JEV_LI_LI</option>
+			<option value="2">JEV_DIV_SEPARATOR</option>
+		</field>
+		<field name="presentationfields" type="textarea" cols="30" rows="3" default="{TITLE}" label='LAYOUT_IN_EVENT_DETAIL_OUTPUT'  description='LAYOUT_IN_EVENT_DETAIL_OUTPUT_TIP'  />		
+		
+		<field name="jomsociallist" type="jevboolean" default="0" label='JEV_JOMSOCIAL_LINK'  description='JEV_JOMSOCIAL_LINK_DESC'  />
+		<field name="cblist" type="jevboolean" default="0" label='JEV_CB_LINK'  description='JEV_CB_LINK_DESC'  />
+		
+	</fieldset>
+
+	<fieldset
+		name="personsdetail"
+		label="COM_JEVPEOPLE_PERSON_DETAILS"
+		addfieldpath="/administrator/components/com_jevpeople/fields/"
+	>
+		
+		<field name="@spacer"  type="jevinfo" default='JEV_PERSON_UPCOMING'    label="" description="" />
+		<field name="eventsindetail" type="jevboolean" default="0" label='JEV_SHOW_UPCOMING_EVENTS_IN_PERSON_DETAIL_PAGE'  description='JEV_SHOW_UPCOMING_EVENTS_IN_PERSON_DETAIL_PAGE_DESC'  />
+
+		<field name="ignorefiltermodule" type="radio" default="0" label='JEV_IGNORE_FILTER_MOD'  description='JEV_IGNORE_FILTER_MOD_TIP' >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="modlatest_inccss" type="radio" default="1" label='EVENTS_CAL_CSS'  description="EVENTS_CAL_CSS_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="layout" type="text" default="" label='OVERRIDE_LAYOUT'  description="Specify Template Override Layout Name e.g. detail2 or calendar2"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field name="modlatest_useLocalfield" type="hidden" default="1" label='JEV_LATEST_USE_SETTINGS'  description='JEV_LATEST_USE_SETTINGS_DESC'  />
+		<field name="modlatest_CustFmtStr" type="textarea" cols="50" rows="5" default='${eventDate}[!a: - ${endDate(%I:%M%p)}]&lt;br /&gt;${title}'  label='JEV_LEV_CUST_FORM_STRING'  description="JEV_LEV_CUST_FORM_STRING" />
+		<field name="modlatest_MaxEvents" type="text" size="3" default="10" label='JEV_LEV_MAX_DISPLAY'  description="JEV_LEV_MAX_DISPLAY_TIP" />
+		<field name="modlatest_Mode" type="list" default="3" label='JEV_LEV_DISPLAY_MODE'  description="JEV_LEV_DISPLAY_MODE">
+			<option value="0">JEV_LATEST_DISPLAY_MODE_0</option>
+			<option value="1">JEV_LATEST_DISPLAY_MODE_1</option>
+			<option value="2">JEV_LATEST_DISPLAY_MODE_2</option>
+			<option value="3">JEV_LATEST_DISPLAY_MODE_3</option>
+			<option value="4">JEV_LATEST_DISPLAY_MODE_4</option>
+			<option value="5">JEV_LATEST_DISPLAY_MODE_4</option>
+			<option value="6">JEV_LATEST_DISPLAY_MODE_4</option>
+		</field>
+		<field name="modlatest_Days" type="text" default="30" size="2" label="JEV_LEV_DAY_RANGE" description="JEV_LEV_DAY_RANGE_TIP" />
+		<field name="modlatest_NoRepeat" type="radio" default="0" label='JEV_LEV_REP_EV_ONCE'  description="JEV_LEV_REP_EV_ONCE_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="targetmenu" type="jevmenu" default="" label='JEV_PEOPLE_TARGET_MENU_ITEM'  description='JEV_PEOPLE_MENU_ITEM_FOR_TARGET_PAGE'  />
+		<field name="modlatest_DispLinks" type="radio" default="1" label='JEV_LEV_EV_AS_LINK'  description="JEV_LEV_EV_AS_LINK_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="modlatest_DispYear" type="radio" default="0" label="JEV_LEV_DISPLAY_YEAR" description="JEV_LEV_DISPLAY_YEAR_TIP" >
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="modlatest_DisDateStyle" type="radio" default="0" label='JEV_LEV_CSS_DATE_FIELD'  description="JEV_LEV_CSS_DATE_FIELD_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="modlatest_DisTitleStyle" type="radio" default="0" label='JEV_LEV_CSS_TITLE_FIELD'  description="JEV_LEV_CSS_TITLE_FIELD_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="modlatest_LinkToCal" type="list" default="0" label='JEV_LEV_LINKCAL_FIELD'  description="JEV_LEV_LINKCAL_FIELD_TIP">
+			<option value="0">JEV_LEV_NOLINK</option>
+			<option value="1">JEV_LEV_FIRSTLINE</option>
+			<option value="2">JEV_LEV_LASTLINE</option>
+		</field>		
+		<field name="modlatest_LinkCloaking" type="radio" default="0" label='JEV_LEV_HIDE_LINK'  description="JEV_LEV_HIDE_LINK_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+		<field name="modlatest_SortReverse" type="radio" default="0" label='JEV_LEV_SORTREVERSE'  description="JEV_LEV_SORTREVERSE_TIP">
+			<option value="0">JEV_NO</option>
+			<option value="1">JEV_YES</option>
+		</field>
+	</fieldset>
+
+	<fieldset
+		name="personslist"
+		label="COM_JEVPEOPLE_EVENT_LIST"
+		addfieldpath="/administrator/components/com_jevpeople/fields/"
+	>
+		<field name="custinlist" type="jevboolean" default="0" label='JEV_FETCH_CUSTOM_FIELDS_IN_LISTS'  description='JEV_FETCH_CUSTOM_FIELDS_IN_LISTS_DESC'  />
+		<field
+			name="showimage"
+			type="jevboolean"
+			default="1"
+			label="COM_JEVPEOPLE_FIELD_SHOW_IMAGES_LABEL"
+			description="COM_JEVPEOPLE_FIELD_SHOW_IMAGES_DESC"
+		/>
+
+	</fieldset>
+	
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_jevpeople"
+			section="component" 
+		/>
+		
+	</fieldset>	
+</config>

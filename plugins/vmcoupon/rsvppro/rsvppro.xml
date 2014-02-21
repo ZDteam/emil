@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5"  type="plugin" group="vmcoupon" method="upgrade">	
+    <name>RSVP Pro Payment Trigger - Coupon Plugin</name>
+    <creationDate>June 2013</creationDate>
+    <author>Geraint Edwards</author>
+    <authorUrl>http://www.jevents.net</authorUrl>
+    <copyright>Copyright (C) 2013 GWE Systems Lts. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>3.0.0 RC2</version>
+    <description>Plugin to trigger payment status updates in RSVP Pro</description>
+
+    <files>
+	<filename plugin="rsvppro">rsvppro.php</filename>
+    </files>
+</extension>

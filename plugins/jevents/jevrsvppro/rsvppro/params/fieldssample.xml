@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_rsvppro/elements/" >
+		<param name="field1" type="jevrlist" default="-1" label="Radio List" required="1" description="Radio List tool tip">
+			<option value="-1">Select One</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Maybe</option>
+			<option value="3">Possibly</option>
+		</param>
+
+		<param name="field2" type="text" default="default text" size="20" maxlength="100" required="1" label="Text Field" requiredmessage="The field (default text) is required" description="Text field tooltip"/>
+		
+		<param name="field3" type="textarea" cols="40" rows="5" default="more default text" label="Textarea" description="Textarea tooltip"/>
+
+		<param name="field4" type="jevrboolean" default="0" label="Boolean" required="1" requiredmessage="The field (Boolean) is required" description="Boolean tooltip"/>
+		
+		<param name="field7" type="jevrinstruction" value="Instructions to user" label="" allowoverride="1"/>
+		
+		<param name="field5" type="jevrradio" default="0" label="Radio List" description="Radio List tooltip">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Maybe</option>
+			<option value="3">Possibly</option>
+		</param>
+
+		<param name="field6" type="calendar" default="" label="Calendar" required="1" requiredmessage="We need a date" description="Calendar tooltip"/>
+				
+		<param name="field0" type="jevrlist" default="-1" label="Number Required" required="1" capacity="7" includeintotalcapacity="1" reducevaluefortotalcapacity="1" nocapacitymessage="No more available" description="Number Required ToolTip" requiredmessage="You must select a value for 'Number Required'">
+			<option value="-1">Select One</option>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</param>
+		
+		<!-- only use this field is you have commnuity builder //-->
+		<!-- <param name="field9" type="jevrcbavatar" label="Avatar" allowoverride="1" /> //-->
+
+		<!-- Using the new file type registrants can upload a file during their registration process - this requires version 1.3.0 + of the standard image/file upload plugin //-->		
+		<param name="field9" type="jevrfile" default="" required="1" label="File Upload" requiredmessage="The field (file upload) is required" description="Browse for a file and click upload" 	/>
+
+		<param name="field5x" type="jevrurl" default="http://www.google.com"  size="60" maxlength="255" required="0" requiredmessage="" label="URL (with http://)"  description="Enter Full URL here"  allowoverride="0"  filter="0" hiddenvalue="http://www.google.com" />
+
+	</params>
+</config>

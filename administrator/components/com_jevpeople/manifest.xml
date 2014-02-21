@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>JEV People</name>
+	<creationDate>May 2013</creationDate>
+	<author>Geraint Edwards</author>
+	<copyright>(C) 2009-2013 GWE Systems Ltd</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.gwesystems.com</authorUrl>
+	<version>3.0.9</version>
+	<description>Managed People Extension for JEvents</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>filters</folder>
+		<folder>libraries</folder>
+		<folder>views</folder>
+		<filename>jevpeople.php</filename>
+		<filename>router.php</filename>
+		<filename>metadata.xml</filename>
+	</files>
+    
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_jevpeople.ini</language>
+	</languages>
+	<media folder="admin/media" destination="com_jevpeople">
+		<folder>images</folder>
+	</media>
+
+	<administration>
+		<menu>COM_JEVPEOPLE</menu>
+
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>fields</folder>
+			<folder>install</folder>
+			<folder>libraries</folder>
+			<folder>media</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+						
+			<filename>access.xml</filename>
+			<filename>category.xml</filename>
+			<filename>config.xml</filename>
+			<filename>jevpeople.php</filename>
+		</files>
+
+		<!-- Admin Language Files -->
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_jevpeople.ini</language>
+			<language tag="en-GB">en-GB.com_jevpeople.menu.ini</language>
+			<language tag="en-GB">en-GB.com_jevpeople.sys.ini</language>
+		</languages>
+	</administration>
+
+	<params />
+
+</extension>

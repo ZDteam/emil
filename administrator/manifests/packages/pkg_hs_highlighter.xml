@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+  <name>pkg_hs_highlighter</name>
+  <license>GNU/GPL version 2 or later</license>
+  <author>Hayato Sugimoto</author>
+  <authorEmail>mail@hs-shelf.com</authorEmail>
+  <authorUrl>http://hs-shelf.com</authorUrl>
+  <packagename>hs_highlighter</packagename>
+  <version>1.0.12</version>
+  <description>Thank you for installing HS Highlighter Package! </description>
+  <files>      
+          <filename>plg_content_hs_highlighter_1.0.13.zip</filename>
+          <filename>plg_editor-xtd_hs_highlighter_1.0.7.zip</filename>
+  </files>  
+</extension>
+

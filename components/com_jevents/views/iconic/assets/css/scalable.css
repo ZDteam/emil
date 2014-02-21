@@ -1,0 +1,934 @@
+/* Overall Style */
+#jevents_header tr, #jevents_header td, #jevents_body tr, #jevents_body td {border:none;	line-height:1.65em;}
+#jevents_body table.contentpaneopen {
+	width:100%;
+}
+#jevents_body .maintable {
+	border: 1px solid #99a0aa;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#jevents_body {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#jevents_body.jeventslight{
+	color:#000000;
+}
+
+#jevents_body a {
+	color: #606F79;
+	text-decoration: none;
+}
+#jevents_body .jeveventrow a {
+	display:block;
+	height:100%;
+	min-height:50px;
+}
+
+#jevents_body a:hover {
+	color: #8090A3;
+	background-color: transparent;
+}
+.jev_clear {
+	clear:both;
+}
+/* Header */
+#jevents_body .tableh1 {
+	color:#606F79;
+	font-size: 11px;
+	height: 26px;
+	background-image:   url(../images/tile_back1.gif)!important;
+	background-position: top;
+	background-repeat: repeat-x;
+	padding: 8px 12px;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #CED2D6;
+}
+#jevents_body .tableh1 tr {
+	border:none;
+}
+#jevents_body .tableh1 td.buttontext {
+	padding-left:25px;
+	vertical-align:middle;
+	text-align:center;
+	border:none;
+}
+#jevents_body .buttontext a {
+	font-size: 9px;
+	color: #606F79;
+	text-decoration: none;
+}
+#jevents_body .buttontext img {
+	border:none;
+}
+#jevents_body .buttontext a:hover {
+	color: #8090A3;
+}
+#jevents_body .today {
+	font-size: 9px;
+	color: #606F79;
+	font-weight: bold;
+}
+
+/* Second block - ruthin style*/
+
+.jev_toprow {
+	height:80px;
+	border-color:#95A5AD;
+	border-style: solid;
+	border-width:0px 1px 1px 1px;	
+}
+.jev_listview .jev_toprow {
+	height:57px;
+}
+.jev_listview .jev_toprowcat {
+	height:34px;
+}
+#jevents_body .jev_toprow h2 {
+	width:58%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0px;
+	padding: 0px;	
+	color : #606F79;
+	float:left;
+	line-height:34px;
+}
+#jevents_body .jev_toprow h2 span{
+	background-image :   url(../images/box_left_icon.gif);
+	background-repeat : no-repeat;
+	background-position : left;
+	padding: 0px 0px 0px 13px;
+}
+.jev_toprow .jev_header, .jev_toprow .jev_headercat {
+	color:#606F79;
+	font-size: 11px;
+	height: 34px;
+	background-image:   url(../images/tile_back1.gif)!important;
+	background-position: top;
+	background-repeat: repeat-x;
+	padding: 0px;
+	border-width:0px;
+}
+
+.jev_toprow .jev_headercat select {
+	margin:5px 12px 0px 0px;
+	float:right;
+	text-align:right;
+	height:24px;
+}
+#jevents_body .jev_toprow div.today {
+	margin:0px;
+	padding: 0px;	
+	line-height:34px;
+	float:right;
+	text-align:right;
+	width:40%;
+}
+#jevents_body .jev_toprow div.today span {
+	margin:0px 12px 0px 0px;
+}
+.jev_toprow .jev_header2 {
+	margin:0px;
+	padding:0px;
+	border-width:0px;
+	height:46px;
+}
+
+.jev_listview .jev_header2 {
+	height:23px;
+}
+
+.jev_listview .jev_listrow {
+	float:left;
+	border:none;
+	border-color:#95A5AD;
+	border-style: solid;
+	border-width:0px 1px 1px 1px;	
+	
+}
+.jev_pagination {
+	clear:left;
+	border-color:#95A5AD;
+	border-style: solid;
+	border-width:0px 1px 1px 1px;
+	text-align:center!important;
+	padding-top:5px;
+}
+.jev_pagination div , .jev_pagination ul{
+	text-align:center!important;
+}
+.jev_pagination ul, .jev_pagination ul.pagination {
+	margin:0px auto!important;
+	padding:2px!important;
+	background:none;
+}
+.jev_pagination li {
+	display:inline;
+	margin-right:3px;
+}
+.ev_adminpanel {
+	clear:left;
+}
+.jev_listview .jev_listrow ul {
+	padding:0px;
+}
+.jev_listview .jev_listrow li {
+	background:none;
+	margin:3px 10px;
+	list-style-type:none;
+}
+
+#jevents_body .jev_listview .jev_listrow div.jevleft { 
+	float:left;
+	width:100px;
+	border:none;
+}
+#jevents_body .jev_listview .jev_listrow div.jevright { 	
+	margin:10px 0px 5px 100px;
+	border-left-style:solid;
+	border-left-width:5px;
+		
+	padding-left:6px;
+}
+
+.jevdateicon {
+	padding:0px;
+	display:block;
+	margin:20px auto;
+	width:60px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+span.jevdateicon1, span.jevdateicon2 {
+	margin:0px;
+	display:block;
+}
+.jev_daysnames {
+	height:23px;
+	line-height:23px;
+	color:#eeeeee!important;
+	background:url(../images/tile_sub.gif) repeat-x transparent top left;
+	font-size: 10px;
+	font-weight:bold;
+	text-align:center;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.jev_daysnames > span {
+	display:block;
+	border-color:#95A5AD;
+	border-style: solid;
+	border-width:0px 1px 1px 0px;
+}
+.jev_daysnames6 > span {
+	border-right-width:0px;
+}
+.jev_daysnames span .sunday, .jev_daysnames span .saturday {
+	border-left-width: 0px;
+}
+.jev_daysnames a {
+	color:#eeeeee!important;
+}
+.jev_listview .jev_daysnames {
+	border-width:0px 1px 0px 1px;
+	border-style:solid;
+	border-color:#95A5AD;
+}
+
+.jev_toprow div.previousmonth, .jev_toprow div.currentmonth, .jev_toprow div.nextmonth {  
+	float:left;
+	height:23px;
+	line-height:23px;
+	text-align:center!important;
+	color: #606F79!important;
+	font-weight:bold;
+}
+.jev_toprow div.previousmonth span, .jev_toprow div.currentmonth span, .jev_toprow div.nextmonth span{  
+	display:block;
+}
+.jev_toprow div.previousmonth span, .jev_toprow div.currentmonth span{  
+	border-color:#95A5AD;
+	border-style: solid;
+	border-width:0px 1px 0px 0px;
+}
+
+.jev_catdesc {
+	margin:5px;
+}
+
+/* Main block - Ruthin Style */
+div.jev_daynum {
+	float:left!important;
+	height:20px!important;
+} 
+div.jev_daynum span {
+	margin-left:2px!important;	
+	display: block;
+}
+img.jevspacer {
+	width:1px;
+	height:81px;
+	display:inline;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+div.jevdaydata {
+	vertical-align:top;
+	padding:0px!important;
+	float:left;
+	margin:0px;
+	position:relative;
+	z-index: 1;
+}
+
+div.jeveventrow{
+	width:100%;
+	clear:left;
+	position:relative;
+	z-index: 1;
+	margin:0px 0px 0px -1px;
+	min-height:80px;
+}
+div.jeveventrow div.jev_dayoutofmonth, div.jeveventrow div.jev_daywithevents, div.jeveventrow div.jev_daynoevents, div.jeveventrow div.jev_today{
+	float:left;
+}
+div.jev_daynum_today {
+	background-color:transparent;
+}
+table.jev_eventsrow td.jevdaydata {
+	border-width:0px;
+}
+div.jev_daynum_outofmonth, div.jev_dayoutofmonth{
+	background-color:transparent;
+}
+div.jev_dayoutofmonth{
+	border-style:none;
+}
+
+div.jev_daynoevents{
+}
+
+div.jev_lastday , div.jev_lastdaynum {
+	border-right-color:transparent;
+}
+
+/* add an event */
+#jevents_body a.addjevent:hover {background-color: transparent;}
+a.addjevent {
+	width:16px;
+	height:16px;
+	margin-right:2px;
+	float:right;
+	background-image: url("../images/add.png")!important;
+	background-repeat: no-repeat; 
+	background-position: top left;
+	visibility:hidden;
+}
+a.addjevent img {
+	border-width:0px!important;
+}
+.showjevadd a.addjevent {
+	visibility:visible;
+}
+
+/* Monthly View classes */
+#jevents_body .eventfull {
+	margin:2px;
+	background-color: #E4E8E8;
+	cursor: pointer;
+	padding:2px;
+	border-radius: 5px;
+}
+#jevents_body .eventstyle {
+	font-size: 9px;
+	padding: 3px;
+	margin:0px;
+	text-align: left;
+	border-color:transparent transparent #D0D4D4  #D0D4D4;
+	border-style:solid;
+	border-width:2px 2px 2px 2px;;
+	border-radius: 0px 5px 0px 5px;
+}
+#jevents_body .eventstyle .editlinktip {
+	display:block;
+	height:100%;
+}
+
+#jevents_body .imagecell {    
+	background-color: #C8D2D8;
+	padding: 8px;
+}
+#jevents_body .imagecell img {    
+	border: 1px solid;
+	border-top-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	border-right-color: #C0C6C6;
+	border-bottom-color: #C0C6C6;
+	cursor: pointer;
+}
+
+
+/* Event Legend Module Styling */
+.moduletable div.event_legend_container {
+	color:black;
+	padding:0px;
+	font-size:0.9em;
+}
+ul.event_legend_list{
+	list-style:none !important;
+	padding:0px;
+	margin:5px;
+}
+ul.event_legend_list li {
+	list-style:none !important;
+	border:solid black 1px;
+	background-image:none !important;
+	padding-left:0px;
+}
+div.event_legend_name {
+	font-size:1em;
+	padding:3px;
+	font-weight:bold;
+}
+div.event_legend_name a{
+	display:block;
+	text-decoration:none;
+	background-color:inherit;
+	color:black;
+}
+
+div.event_legend_desc {
+	background-color:white;
+	color:black;
+	padding:3px 3px 3px 10px;
+
+}
+
+/* Component Legend Styling
+float div to get table like view 
+border-color is set to category color by code */
+#jevents_body .event_legend_container {
+	background-color:rgb(230,230,230);
+	border:solid 1px #99a0aa;
+}
+#jevents_body  div.event_legend_item {
+	float:left;
+	border-left-width:0px;
+	border-left-style:solid;
+	padding-left:4px;
+	margin-top:5px;
+	margin-left:0px;
+	margin-bottom:4px;
+	min-width:80px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#jevents_body div.event_legend_name {
+	border-left-width:8px;
+	border-left-style:solid;
+	padding: 0px 0px 0px 4px;
+}
+#jevents_body div.event_legend_desc {
+	border-left-width:8px;
+	border-left-style:solid;
+	padding: 0px 0px 0px 4px;
+	display:none;
+}
+/* end component legend */
+
+div.jev_adminfilter {
+	text-align:center;
+	font-weight:bold;
+	margin:5px auto 10px auto; 
+}
+
+/***************************************
+* Mootools ToolTips for JEvents Calendar
+****************************************/
+.jevtip-tip, .jevtip {
+	float: left;
+	background: #f5f5f5;
+	border: 1px solid #D4D5AA;
+	padding: 0px;
+	max-width: 400px;
+	z-index:99;
+	font-size:10pt;
+}
+
+.jevtip-text {
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+div.jevtt_title{
+	font-weight: bold;
+	font-size: 1.2em;
+	padding:2px;
+}
+div.jevtt_text{
+	padding:2px;
+	width:196px;
+	line-height: 1.3em;
+}
+
+.jev_row {
+	font-size:inherit;
+	margin:0px;
+	min-height: 81px;
+}
+
+.jev_week{
+	border-left:1px solid #95A5AD;
+	border-right:1px solid #95A5AD;
+	position:relative;	
+	width:99.8508%;	
+}
+/** Colour schemes **/
+/** GRAY **/
+.jev_gray .jev_toprow div.previousmonth , .jev_gray .jev_toprow div.nextmonth {  
+	background-color: #d8e0e4!important;
+}
+.jev_gray .jev_toprow div.previousmonth a {
+	padding-left:10px;
+	background:url(../images/mini_arrowleft.gif) no-repeat #d8e0e4 center left;
+}
+.jev_gray .jev_toprow div.currentmonth{ 
+	background-color: #d0e6f6!important;
+
+}
+.jev_gray .jev_toprow div.nextmonth a {
+	padding-right:10px;
+	background:url(../images/mini_arrowright.gif) no-repeat #d8e0e4 center right;
+}
+.jev_gray .jevdateicon {
+	background-color: #d8e0e4!important;
+	color:#606f79!important;
+	border:solid 1px #d8e0e4!important;
+}
+.jev_gray .jevdateicon1 {
+	background-color: #606f79!important;
+	color:#d8e0e4!important;
+}
+.jev_gray .jevdateicon2 {
+	background-color: #d8e0e4!important;
+	color:#606f79!important;
+}
+.jev_gray .jev_toprow .jev_header2 {
+	/**background:url(../images/MainTopRowGray.jpg) repeat-x #d0e6f6  left 23px !important;**/
+}
+
+
+/** RED **/
+#jevents_body .jev_red a {
+	color:#111;
+}
+.jev_daysnames_red , table.ev_table td.cal_td_daysnames_red {
+	background:url(../images/MainTopRowRed.jpg) repeat-x transparent top left!important;
+}
+.jev_red .jev_toprow .previousmonth, .jev_red  .jev_toprow .nextmonth {
+	background-color: #c20025!important;
+}
+.jev_red .jev_toprow .previousmonth a {
+	padding-left:20px;
+	background:url(../images/Left.png) no-repeat #c20025 center left !important;
+}
+.jev_red  .jev_toprow div.nextmonth a {
+	padding-right:20px;
+	background:url(../images/Right.png) no-repeat #c20025 center right !important;
+}
+
+.jev_red .jev_toprow .currentmonth {
+	background-color:#eee!important;
+	color:#c20025!important;
+}
+.jev_red .jev_toprow a, .jev_red  .jev_toprow a {
+	color:#ffffff!important;
+}
+.jev_red  .jevdateicon {
+	background-color: #c20025!important;
+	color:#fff!important;
+	border:solid 1px #c20025!important;
+}
+
+.jev_red .jevdateicon1 {
+	background-color: #fff!important;
+	color:#c20025!important;
+}
+.jev_red .jevdateicon2 {
+	background:url(../images/MainTopRowRed.jpg) repeat-x transparent top left !important;
+}
+.jev_red .jev_toprow .jev_header2 {
+	background:url(../images/MainTopRowRed.jpg) repeat-x #c20025  left 23px !important;
+}
+
+/** BLUE **/
+#jevents_body .jev_blue a {
+	color:#111;
+}
+.jev_daysnames_blue , table.ev_table td.cal_td_daysnames_blue {
+	background:url(../images/MainTopRowBlue.jpg) repeat-x transparent top left !important;
+}
+.jev_blue .jev_toprow .previousmonth, .jev_blue  .jev_toprow .nextmonth {
+	background-color: #194fa4!important;
+}
+.jev_blue .jev_toprow .previousmonth a {
+	padding-left:20px;
+	background:url(../images/Left.png) no-repeat #194fa4 center left !important;
+}
+.jev_blue  .jev_toprow div.nextmonth a {
+	padding-right:20px;
+	background:url(../images/Right.png) no-repeat #194fa4 center right !important;
+}
+
+.jev_blue .jev_toprow .currentmonth {
+	background-color:#eee!important;
+	color:#194fa4!important;
+}
+.jev_blue .jev_toprow a, .jev_blue  .jev_toprow a {
+	background-color: #194fa4!important;
+	color:#ffffff!important;
+}
+.jev_blue .jevdateicon {
+	background-color: #194fa4!important;
+	color:#fff!important;
+	border:solid 1px #194fa4!important;
+}
+.jev_blue .jevdateicon1 {
+	background-color: #fff!important;
+	color:#194fa4!important;
+}
+.jev_blue .jevdateicon2 {
+	background:url(../images/MainTopRowBlue.jpg) repeat-x transparent top left !important;
+}
+.jev_blue .jev_toprow .jev_header2 {
+	background:url(../images/MainTopRowBlue.jpg) repeat-x #194fa4  left 23px !important;
+}
+
+/** GREEN **/
+#jevents_body .jev_green a {
+	color:#111;
+}
+.jev_daysnames_green , table.ev_table td.cal_td_daysnames_green {
+	background:url(../images/MainTopRowGreen.jpg) repeat-x transparent top left !important;
+}
+.jev_green .jev_toprow .previousmonth, .jev_green  .jev_toprow .nextmonth {
+	background-color: #045908!important;
+}
+.jev_green .jev_toprow .previousmonth a {
+	padding-left:20px;
+	background:url(../images/Left.png) no-repeat #045908 center left !important;
+}
+.jev_green  .jev_toprow div.nextmonth a {
+	padding-right:20px;
+	background:url(../images/Right.png) no-repeat #045908 center right !important;
+}
+
+.jev_green .jev_toprow .currentmonth {
+	background-color:#eee!important;
+	color:#045908!important;
+}
+.jev_green .jev_toprow a, .jev_green  .jev_toprow a {
+	background-color: #045908!important;
+	color:#ffffff!important;
+}
+.jev_green .jevdateicon {
+	background-color: #045908!important;
+	color:#fff!important;
+	border:solid 1px #045908!important;
+}
+.jev_green .jevdateicon1 {
+	background-color: #fff!important;
+	color:#045908!important;
+}
+.jev_green .jevdateicon2 {
+	background:url(../images/MainTopRowGreen.jpg) repeat-x transparent top left !important;
+}
+.jev_green .jev_toprow .jev_header2 {
+	background:url(../images/MainTopRowGreen.jpg) repeat-x #045908  left 23px !important;
+}
+
+/** PURPLE **/
+#jevents_body .jev_purple a {
+	color:#111;
+}
+.jev_daysnames_purple , table.ev_table td.cal_td_daysnames_purple {
+	background:url(../images/MainTopRowPurple.jpg) repeat-x transparent top left !important;
+}
+.jev_purple .jev_toprow .previousmonth, .jev_purple  .jev_toprow .nextmonth {
+	background-color: #4d096e!important;
+}
+.jev_purple .jev_toprow .previousmonth a {
+	padding-left:20px;
+	background:url(../images/Left.png) no-repeat #4d096e center left !important;
+}
+.jev_purple  .jev_toprow div.nextmonth a {
+	padding-right:20px;
+	background:url(../images/Right.png) no-repeat #4d096e center right !important;
+}
+
+.jev_purple .jev_toprow .currentmonth {
+	background-color:#eee!important;
+	color:#4d096e!important;
+}
+.jev_purple .jev_toprow a, .jev_purple  .jev_toprow a {
+	color:#ffffff!important;
+}
+.jev_purple .jevdateicon {
+	background-color: #4d096e!important;
+	color:#fff!important;
+	border:solid 1px #4d096e!important;
+}
+
+.jev_purple .jevdateicon1 {
+	background-color: #fff!important;
+	color:#4d096e!important;
+}
+.jev_purple .jevdateicon2 {
+	background:url(../images/MainTopRowPurple.jpg) repeat-x transparent top left !important;
+}
+.jev_purple .jev_toprow .jev_header2 {
+	background:url(../images/MainTopRowPurple.jpg) repeat-x #4D096E  left 23px !important;
+}
+
+/* used to track media type */
+#jevents_body {
+	z-index:1;
+}
+
+
+div.event_legend_container td.legend {
+	width:100px;
+	margin-right:2px
+}
+div.event_legend_container tr {
+	float:left;
+}
+
+/* Joomla 1.6 changes */
+#action_dialog {
+	text-align: left;
+	 position:absolute;
+	 right:0px;
+	 background-color:#dedede;
+	 border:solid 1px #000000;
+	 width:200px;
+	 padding:10px;
+	 visibility:hidden;
+	 z-index:999;
+}
+#action_dialog div {
+	width:12px!important;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background-color:#ffffff;
+	border:solid #000000;
+	border-width:0 0 1px 1px;
+	text-align:center;
+}
+#action_dialog a{
+	display:block;
+	margin:0px 2px;
+}
+#jevents_header {position:relative;}
+#jevents_header ul.actions {
+	list-style-image: none;
+	position:absolute;
+	right:0px;
+	top:0px;
+	list-style-type: none;
+	list-style-image: none;
+	width:auto!important;	
+}
+#jevents_header ul.actions li {
+	line-height:14px!important;	
+	background-image:none!important;
+	padding-left:0px!important;
+	overflow:visible!important;
+	float:left;
+	margin-left:3px;
+}
+
+
+/*  Size issues */
+div.ev_navigation , #jevents_body, #jevents_header, table.ev_table{
+	width:99.8508%!important;
+}
+#jevents_body table.jevicons {
+	width:100%!important;
+}
+.jev_toprow div.previousmonth , .jev_toprow div.nextmonth {  
+	width:28.5288%;
+}
+.jev_toprow div.currentmonth, .jev_listview div.currentmonth{ 
+	width:42.7932%;
+}
+
+.jev_toprow {
+	width:99.8508%!important;
+}
+.jev_daysnames {
+	width:14.2644%;
+}
+.hiddendayname {width:99.8508% !important;margin-left:1px}
+.jev_pagination {
+	width:100%;
+}
+.jev_listview .jev_daysnames
+, .jev_listview .jev_listrow 
+{
+	width:99.8508% !important;
+}
+
+
+#jevents_body .event_legend_container {
+	width:100%;
+}
+.jevdaydata {
+	width:100%;
+}
+
+div.jev_dayoutofmonth {
+	width:14.2644%;
+	min-height: 40px;
+}
+div.jev_lastday {
+
+	border-right-width:0px;
+}
+div.jev_lastdaynum {
+
+	border-right-width:0px;
+}
+
+div.jev_daynum {
+	width:14.2644%;
+}
+
+div.jevblocks0 {
+	width:0px!important;
+}
+div.jevblocks1{
+	width:14.2644%;
+	float:left;
+}
+
+div.jevblocks2 {
+	width:28.5288%;
+}
+div.jevblocks3 {
+	width:42.7932%;
+}
+
+div.jevblocks4 {
+	width:57.0576%;
+}
+
+div.jevblocks5 {
+	width:71.3220%
+}
+
+div.jevblocks6 {
+	width:85.5864%
+}
+
+div.jevblocks7 {
+	width:99.8508%!important;
+}
+
+/* Hidden date icons for the responsive switch at the end */
+span.hiddenicon {
+	display:none;
+}
+
+
+
+
+
+/* Print version */
+@media print {
+	@page {
+		size:landscape;
+	}
+
+	body.contentpane {
+		/*  filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=3); */
+	}
+	div.ev_navigation {
+		display:none;
+	}
+	div.ev_adminpanel {
+		display:none;
+	}
+	.ev_noprint {
+		display:none;
+	}
+
+	#jevents_body {
+		z-index:2;
+	}
+}
+
+/* underlay */
+#jevents_body .interim{
+	border-style:solid;
+	border-color:#95A5AD;
+	border-width:0px 0px 0px 0px;
+	position:relative;
+}
+	
+#jevents_body .jev_underlay{
+	background-color: #EEF0EF;
+	z-index:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#jevents_body .jev_underlay .jev_underlay_daynum {
+	margin:0px;
+	padding:0px;
+	background-color: transparent;
+	float:left;
+	height:100%;
+	width:14.2644%;
+	position:relative;
+}
+#jevents_body .jev_underlay .jev_underlay_daynum > div {
+	position:absolute;
+	border-style:solid;
+	border-width:0px 1px 1px 0px;
+	border-color:#95A5AD;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+}
+#jevents_body .jev_underlay .jev_underlay_firstdaynum > div {
+/*	border-width:0px 1px 1px 1px!important;*/
+	margin:0px 0px 0px 1px;
+}
+.jev_underlay_daynum.jev_underlay_lastdaynum div {
+	border-right-width: 0px!important;
+}
+#jevents_body .jev_underlay .jev_underlay_daynum_today div 
+{
+	background-color: #DDDDDD;
+}
+
+#jevents_body .jev_underlay .jev_underlay_outofmonth_start div
+{
+	background-color: #d4d8d8;
+}
+#jevents_body .jev_underlay .jev_underlay_outofmonth_end div  {
+	background-color: #d4d8d8;
+}

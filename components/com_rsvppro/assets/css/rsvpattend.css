@@ -1,0 +1,113 @@
+#registration-tab-pane {
+	margin:10px 0px 0px 0px;
+	color:#000;
+}
+.mootabs_title {
+	list-style-image: none!important;
+	list-style-type: none!important;
+	margin: 0px;
+	padding: 0px;
+	display:block;
+}
+
+.mootabs_title li {
+	background-image:none!important;
+	float: left!important;
+	background-color: #dddddd;
+	padding:0px 10px!important;
+	margin-right:2px;
+	cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	border-right:solid 1px #cccccc;
+	border-left:solid 1px #cccccc;
+	border-top:2px solid #dddddd;
+	border-bottom-width:0px;
+	margin-bottom:-1px!important;
+	border-radius:5px 5px 0px 0px;
+
+}
+
+.mootabs_title li.active{
+	background-color: #eeeeee;
+	border-top:2px solid red;
+	padding-bottom:1px;
+}
+.mootabs_title li.inactive:hover{
+	background-color: #eeeeee;
+	border-top:2px solid blue;
+	padding-bottom:1px;
+}
+.mootabs_title li#jevhiddenli{
+	display:none;
+}
+.mootabs_panel {
+	display: none;
+	background-color: #eeeeee;
+	/*width: 100%;*/
+	margin-top: -1px;
+	clear: both;
+	border:solid 1px #cccccc;
+	padding:4px;
+}
+
+.mootabs_panel.active {
+    display: block;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #fff;
+    background-image: url("../images/nav_level_1.gif");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: auto auto;	
+}
+
+.paramtmpl, .disabledfirstparam , .hideparam {
+	display:none!important;
+}
+/* Joomla 3.0 calendar icon */
+ .paramtmpl + button.btn, .disabledfirstparam + button.btn, .hideparam + button.btn{
+	display:none!important;
+}
+
+
+ div.jevattendees #jevattendees, #jevattendees  {width:100%;}
+#jevattendees td {vertical-align: top;border-bottom:solid 1px #ccc;}
+#jevattendees tr.row0{background-color:#e0e0e0;}
+#jevattendees tr.row1{background-color:#fff;}
+
+div.mootabs_panel div#addguest{
+	float:left;
+}
+div.mootabs_panel div#addguest div.blank {
+	padding:0px 5px;
+	height:22px;
+	line-height: 22px;
+
+}
+
+div.mootabs_panel div#killguest {
+	cursor:pointer;
+	float:left;
+	display:none;
+	color:#606f79;
+}
+div.mootabs_panel div#killguest div.blank {
+	padding:0px 5px;
+	height:22px;
+	line-height: 22px;
+
+}
+
+div.jevattend_email {
+	margin-bottom: 10px;
+}
+div.jevattend_email label{ font-weight: bold;}
+div.jevattendform div.paybalance , div.jevattendform div.paybalance div{float:none;}
+div.jevcapacity,  div.paymentmethod{margin:3px 0px;}
+.jevattendform .editlinktip {cursor:help;}
+#registration-tab-pane label {
+    display: inline;
+    margin-right: 10px;
+}

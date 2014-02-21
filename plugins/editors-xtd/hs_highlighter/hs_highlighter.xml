@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd" method="upgrade">
+	<name>plg_editors-xtd_hs_highlighter</name>
+	<author>Hs Highlighter</author>
+	<creationDate>2012-12-12</creationDate>
+	<copyright>Copyright (C) 2012 Hayato Sugimoto. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>mail@hs-shelf.com</authorEmail>
+	<authorUrl>hs-shelf.com</authorUrl>
+	<version>1.0.6</version>
+	<description>PLG_EDITOR_XTD_HS_HIHGLIGHTER_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="hs_highlighter">hs_highlighter.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_editors-xtd_hs_highlighter.ini</language>
+		<language tag="en-GB">en-GB.plg_editors-xtd_hs_highlighter.sys.ini</language>
+		<language tag="ja-JP">ja-JP.plg_editors-xtd_hs_highlighter.ini</language>
+		<language tag="ja-JP">ja-JP.plg_editors-xtd_hs_highlighter.sys.ini</language>		
+	</languages>
+	
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				
+				<field name="endtag" type="list"
+					default="p"
+					description="PLG_CODEMIRROR_FIELD_ENDTAG_DESC"
+					label="PLG_CODEMIRROR_FIELD_ENDTAG_LABEL"
+				>
+					<option value="">PLG_EDITOR_XTD_HS_HIGHLIGHTER_ENDTAG_OPTION_NOTHING</option>
+					<option value="p">PLG_EDITOR_XTD_HS_HIGHLIGHTER_ENDTAG_OPTION_P</option>
+					<option value="br">PLG_EDITOR_XTD_HS_HIGHLIGHTER_ENDTAG_OPTION_BR</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>	
+</extension>
